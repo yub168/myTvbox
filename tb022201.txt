@@ -20,6 +20,15 @@
     }
   ],
   "sites": [
+      {
+      "key": "csp_SP360",
+      "name": "👒360影视",
+      "type": 3,
+      "api": "csp_SP360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
     {
       "key": "csp_Kunyu77",
       "name": "👒┃七七┃影视",
