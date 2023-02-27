@@ -57,6 +57,15 @@
       "filterable": 1
     },
     {
+      "key": "csp_Bdys01",
+      "name": "📯哔嘀影视",
+      "type": 3,
+      "api": "csp_Bdys01",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "csp_XYQHiker_皮皮鸭影视",
       "name": "🐩┃皮皮┃影视",
       "type": 3,
