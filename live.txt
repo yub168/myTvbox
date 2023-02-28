@@ -336,7 +336,8 @@ CHC动作电影,https://live.v1.mk/aishang/chcdzdy
 CCTV4K,https://live.v1.mk/api/bestv.php?id=cctv4k/15000000
 欢笑剧场,http://baidu.live.cqccn.com/__cl/cg:live/__c/hxjc_4K/__op/default/__f//index.m3u8
 欢笑剧场,https://live.v1.mk/api/bestv.php?id=hxjc4k/15000000
-
+CCTV16_4K,http://118.24.227.124/bytedance.live.cqccn.com/__cl/cg:live/__c/CCTV16_4K/__op/default/__f/index.m3u8
+4K超高清电影,http://159.75.85.63:5681/sxg.php
 💯ipv6央视高清,#genre#
 CCTV1,http://[2409:8087:5e01:34::20]:6610/ZTE_CMS/00000001000000060000000000000131/index.m3u8?IAS
 CCTV1,http://[2409:8087:5e01:34::21]:6610/ZTE_CMS/00000001000000060000000000000131/index.m3u8?IAS
