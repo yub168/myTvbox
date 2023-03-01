@@ -73,6 +73,8 @@
 
     {"key":"csp_Nmys","name":"农民影视","type":3,"api":"csp_Nmys","searchable":1,"quickSearch":1,"filterable":1,"ext":"./XP/nongminyingshi.json"},
 
+    {"key":"csp_XPath_yinfans","name":"音范丝4K(XP)","type":3,"api":"csp_XPath","searchable":1,"quickSearch":1,"filterable":1,"ext":"./XP/yinfans.json"},
+
     {
       "key": "csp_XYQHiker_皮皮鸭影视",
       "name": "🐩┃皮皮┃影视",
