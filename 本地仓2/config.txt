@@ -4,8 +4,6 @@
 "wallpaper":"http://maoyingshi.cc/api.php",
 "sites":[
 
-
-
 {"key":"T4_douban","name":"影视推荐(T4)","type":4,"api":"https://t4.饭太硬.ml/vod","searchable":1,"quickSearch":1,"filterable":1},
 
 {"key":"csp_IQIYI","name":"爱奇艺〔SP〕","type":3,"api":"csp_IQIYI","searchable":1,"quickSearch":1,"filterable":1},
