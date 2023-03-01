@@ -72,7 +72,7 @@
     {"key":"csp_QQ","name":"腾讯视频","type":3,"api":"csp_QQ","searchable":1,"quickSearch":1,"filterable":1},
 
     {"key":"csp_Nmys","name":"农民影视","type":3,"api":"csp_Nmys","searchable":1,"quickSearch":1,"filterable":1,"ext":"./XP/nongminyingshi.json"},
-    
+
     {
       "key": "csp_XYQHiker_皮皮鸭影视",
       "name": "🐩┃皮皮┃影视",
@@ -161,17 +161,7 @@
       "ext": "https://gitee.com/liugd1005/home-tvbox/raw/master/TVBOX-XPath/FREEOK.json",
       "jar": "https://gitee.com/liugd1005/home-tvbox/raw/master/Home-Spiders/homespiders-xpath.jar"
     },
-    {
-      "key": "LIBVIO",
-      "name": "🏈┃LIB┃影视",
-      "type": 3,
-      "api": "csp_XPathMacFilter",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://gitee.com/liugd1005/home-tvbox/raw/master/TVBOX-XPath/LIBVIO.json",
-      "jar": "https://gitee.com/liugd1005/home-tvbox/raw/master/Home-Spiders/homespiders-xpath.jar"
-    },
+    
     {
       "key":"csp_appysv2_555影视",
       "name":"🤝┃555┃影视",
