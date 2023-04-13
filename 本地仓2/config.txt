@@ -1,7 +1,7 @@
 //https://raw.iqiq.io/zhanghong1983/TVBOXZY/main/tvbox.json
 
 {
-"spider":"./Yoursmile.jar",
+"spider":"https://gitee.com/yub168/myTvbox/raw/master/%E6%9C%AC%E5%9C%B0%E4%BB%932//Yoursmile.jar",
 "lives":[{"group":"redirect","channels":[{"name":"redirect","urls":["proxy://do=live&type=txt&ext=./TV/live.txt"]}]}],
 "wallpaper":"http://maoyingshi.cc/api.php",
 "sites":[
