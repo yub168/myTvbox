@@ -189,7 +189,7 @@
       "filterable": 1,
       "ext": "https://gitee.com/liugd1005/home-tvbox/raw/master/TVBOX-XPath/FREEOK.json",
       "jar": "https://gitee.com/liugd1005/home-tvbox/raw/master/Home-Spiders/homespiders-xpath.jar"
-    },
+    }
     
   ],
   "parses": [
