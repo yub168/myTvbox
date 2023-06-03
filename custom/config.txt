@@ -5,7 +5,7 @@
   //注意事项:实测部分安卓4.4及以下版本或模拟器接口无法显示，非资源失效。
 
   "wallpaper": "https://qiu.moe/a723",
-  "spider": "https://gitee.com/yub168/myTvbox/raw/master/custom/custom_spider.jar;md5;2a3d2c85739d22c6f5176f548220b88e",
+  "spider": "https://gitee.com/yub168/myTvbox/raw/master/custom/custom_spider.jar;md5;2a3d2c85739d22c6f5176f548220b88e"
   "lives": [
     {
       "group": "redirect",
