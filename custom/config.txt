@@ -82,7 +82,8 @@
       "playerType":1,
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1，
+      "jar":"https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
     },
     {
       "key": "csp_Bdys01",
