@@ -112,13 +112,25 @@
       "filterable": 1
     },
     {
-      "key": "csp_QQ",
-      "name": "腾讯视频",
+      "key": "Qtv",
+      "name": "🐧腾讯视频",
       "type": 3,
-      "api": "csp_QQ",
+      "api": "csp_Qtv",
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
+      "filterable": 1,
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+    },
+    {
+      "key": "Lezhu",
+      "name": "🐷┃乐猪┃影视",
+      "api": "csp_XBPQ",
+      "type": 3,
+      "filterable": 1,
+      "quickSearch": 1,
+      "searchable": 1,
+      "ext": "http://我不是.肥猫.love:63/json/乐猪.json",
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
     },
     {
       "key": "csp_Nmys",
@@ -129,6 +141,46 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./XP/nongminyingshi.json"
+    },
+    {
+      "key": "csp_XBPQ秋霞影视",
+      "name": "️🍂┃秋霞┃影视",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar",
+      "ext": {
+        "分类": "电影$1#连续剧$2#动漫$4#综艺$3",
+        "分类url": "https://www.qiuxia360.com/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html;;val",
+        "跳转播放链接": "https://www.jfxz689.com/?url=+vod_class*url\":\"&&\"+&tm=+\"tm\":&&,+&key=+\"key\"*\"&&\"",
+        "二次跳转播放链接": "https://www.jfxz689.com/API.php;post;url=+\"url\"*\"&&\"+&time=+\"time\"*\"&&\"+&key=+\"key\"*\"&&\"",
+        "三次跳转播放链接": "\"url\"*\"&&\""
+      }
+    },
+    {
+      "key": "csp_DiDuan",
+      "name": "⏮️┃低端┃影视",
+      "type": 3,
+      "api": "csp_Ddrk",
+      "click": "ddys.tv;#vjsp > button",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+    },
+    {
+      "key": "csp_appys_如意4K",
+      "name": "🐵️┃如意┃影视",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://cms.maoyingshi.cc/api.php/app/",
+      "playUrl": "json:https://jx.4kdv.com/?url=",
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
     },
     {
       "key": "csp_XPath_yinfans",
