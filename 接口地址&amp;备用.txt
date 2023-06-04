@@ -33,3 +33,4 @@ https://ghproxy.com/https://raw.githubusercontent.com/tv-player/tvbox-line/main/
 
 7：
 http://我不是.肥猫.love:63/接口禁止贩卖
+http://我不是.肥猫.love:63/TV/tvzb.txt  //直播接口
