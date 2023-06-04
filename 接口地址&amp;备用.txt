@@ -1,31 +1,35 @@
-µØÖ·1£º£¨ÒÔÏÂµØÖ·ÄÚÈİÏàÍ¬£©
-¹úÄÚ·ÃÎÊµØÖ·Ò»
+ï¿½ï¿½Ö·1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Êµï¿½Ö·Ò»
 https://raw.iqiq.io/2hacc/TVBox/main/tvbox
 
-¹úÄÚ·ÃÎÊµØÖ·¶ş
+ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Êµï¿½Ö·ï¿½ï¿½
 https://raw.fastgit.org/2hacc/TVBox/main/tvbox
 
-¹úÄÚ·ÃÎÊ±¸ÓÃµØÖ·Ò»
+ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Ê±ï¿½ï¿½Ãµï¿½Ö·Ò»
 https://cdn.jsdelivr.net/gh/2hacc/TVBox@main/tvbox
 
-¹úÄÚ·ÃÎÊ±¸ÓÃµØÖ·¶ş
+ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Ê±ï¿½ï¿½Ãµï¿½Ö·ï¿½ï¿½
 https://raw.githubusercontents.com/2hacc/TVBox/main/tvbox
 
-¹úÄÚ·ÃÎÊ±¸ÓÃµØÖ·Èı
+ï¿½ï¿½ï¿½Ú·ï¿½ï¿½Ê±ï¿½ï¿½Ãµï¿½Ö·ï¿½ï¿½
 https://ghproxy.com/https://raw.githubusercontent.com/2hacc/TVBox/main/tvbox
 
-µØÖ·2£º(Ê§Ğ§£©
+ï¿½ï¿½Ö·2ï¿½ï¿½(Ê§Ğ§ï¿½ï¿½
 http://shuyuan.miaogongzi.net/shuyuan/1666787308.txt
 
-µØÖ·3£º
+ï¿½ï¿½Ö·3ï¿½ï¿½
 https://raw.liucn.cc/box/m.json
 
-µØÖ·4£º(×Ô±à£©
+ï¿½ï¿½Ö·4ï¿½ï¿½(ï¿½Ô±à£©
 https://gitee.com/yub168/myTvbox/raw/master/tb022601.txt
 
-µØÖ·5£º£¨±¾µØ£©
-ÎÄ¼şÉÏ´«Î»ÖÃÔÚÏµÍ³¸ùÄ¿Â¼ÏÂtvboxÎÄ¼ş¼ĞÏÂ
+ï¿½ï¿½Ö·5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½
+ï¿½Ä¼ï¿½ï¿½Ï´ï¿½Î»ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ä¿Â¼ï¿½ï¿½tvboxï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 clan://localhost/tvbox/myspider04.txt
-spiderºÍliveµØÖ·²»Òª¼Ólocalhost
+spiderï¿½ï¿½liveï¿½ï¿½Ö·ï¿½ï¿½Òªï¿½ï¿½localhost
 
+6:(ï¿½ï¿½ï¿½Ã£ï¿½
+https://ghproxy.com/https://raw.githubusercontent.com/tv-player/tvbox-line/main/tv/q73m.json
 
+7ï¼š
+http://æˆ‘ä¸æ˜¯.è‚¥çŒ«.love:63/æ¥å£ç¦æ­¢è´©å–
