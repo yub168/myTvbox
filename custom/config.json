@@ -62,7 +62,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "csp_Kuaikan",
@@ -82,7 +82,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "csp_Bdys01",
@@ -119,7 +119,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "Lezhu",
@@ -130,7 +130,7 @@
       "quickSearch": 1,
       "searchable": 1,
       "ext": "http://我不是.肥猫.love:63/json/乐猪.json",
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "csp_Nmys",
@@ -150,7 +150,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar",
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2",
       "ext": {
         "分类": "电影$1#连续剧$2#动漫$4#综艺$3",
         "分类url": "https://www.qiuxia360.com/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html;;val",
@@ -168,7 +168,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "csp_appys_如意4K",
@@ -180,7 +180,7 @@
       "filterable": 1,
       "ext": "http://cms.maoyingshi.cc/api.php/app/",
       "playUrl": "json:https://jx.4kdv.com/?url=",
-      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar"
+      "jar": "https://gitee.com/yub168/myTvbox/raw/master/custom/fatCat.jar;md5;41DEF120266367E3327D6EA26F384FC2"
     },
     {
       "key": "csp_XPath_yinfans",
