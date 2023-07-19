@@ -1,19 +1,37 @@
 {
   "sites": [
     {
-      "key": "js豆瓣",
-      "name": "🐼┃豆瓣┃免费接口，微信公众号：肥猫不肥",
-      "type": 3,
-      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
-      "ext": "http://alist.xn--z7x900a.love:63/豆瓣.js"
-    },
-    {
       "key": "爱迪",
       "name": "💡┃爱迪┃影视",
       "type": 3,
       "api": "csp_AppYsV2",
       "playerType": "2",
-      "ext": "https://api123.adys.app/xgapp.php/v3/"
+      "ext": "https://api123.adys.app/xgapp.php/v3/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "荐片",
+      "name": "🎬┃豆瓣┃荐片",
+      "type": 3,
+      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
+      "playerType": "2",
+      "ext": "http://smallmi.xiaohewanwan.love:63/jp.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "yyds",
+      "name": "🔥┃杳音┃影院",
+      "type": 3,
+      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
+      "playerType": "2",
+      "ext": "http://alist.xn--z7x900a.love:63/yyds.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
       "key": "YQK_spider",
@@ -27,10 +45,12 @@
       "ext": "https://hk-api-cf.yqk5659.com"
     },
     {
-      "key": "csp_Kunyu77",
+      "key": "七七",
       "name": "🌈┃七七┃影视",
       "type": 3,
-      "api": "csp_Kunyu77",
+      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
+      "playerType": "2",
+      "ext": "http://alist.xn--z7x900a.love:63/七七.js",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -40,7 +60,6 @@
       "name": "⏮️┃低端┃影视",
       "type": 3,
       "api": "csp_Ddrk",
-      "click": "ddys.tv;#vjsp > button",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -53,6 +72,16 @@
       "filterable": 1,
       "quickSearch": 1,
       "searchable": 1
+    },
+    {
+      "key": "csp_FanYY",
+      "name": "🧸┃玩偶┃影视",
+      "type": 3,
+      "api": "csp_WoGG",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt$$$https://wogg.xyz/"
     },
     {
       "key": "csp_AppMr",
@@ -73,17 +102,6 @@
       "filterable": 1
     },
     {
-      "key": "布蕾蓝光",
-      "name": "🏵┃布蕾┃影视",
-      "type": 3,
-      "api": "csp_XYQHiker",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "http://我不是.肥猫.love:63/json/bulei.json",
-      "jar": "http://我不是.肥猫.love:63/Jar/XYQ.jar;md5;A5C99949E4CD101126A31133ECE6BB61"
-    },
-    {
       "key": "肥猫",
       "name": "😸┃肥猫┃影视",
       "type": 3,
@@ -91,18 +109,18 @@
       "ext": "http://我不是.肥猫.love:63/json/芸芸.json"
     },
     {
-      "key": "蘑菇",
-      "name": "🍄┃蘑菇┃影视",
+      "key": "落落",
+      "name": "🍄┃落落┃影视",
       "type": 3,
       "api": "csp_AppYsV2",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": "https://www.moguys.xyz/api.php/app/"
+      "ext": "http://luoye.shop:66/api.php/app/"
     },
     {
       "key": "飞速",
-      "name": "🚄┃飞速┃影视",
+      "name": "🚄┃影探┃影视",
       "type": 3,
       "api": "csp_AppYsV2",
       "searchable": 0,
@@ -119,6 +137,16 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "http://我不是.肥猫.love:63/json/蚂蚁影院.json"
+    },
+    {
+      "key": "小艺",
+      "name": "🥩┃小艺┃影视",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://lg.tvcms.top/api.php/app/"
     },
     {
       "key": "csp_Lib",
@@ -142,30 +170,6 @@
       "ext": "http://我不是.肥猫.love:63/json/乐猪.json"
     },
     {
-      "key": "csp_XBPQ秋霞影视",
-      "name": "️🍂┃秋霞┃影视",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": {
-        "分类": "电影$1#连续剧$2#动漫$4#综艺$3",
-        "分类url": "https://www.qiuxia360.com/vodshow/{cateId}-{area}-{by}-{class}-----{catePg}---{year}.html;;val",
-        "跳转播放链接": "https://www.jfxz689.com/?url=+vod_class*url\":\"&&\"+&tm=+\"tm\":&&,+&key=+\"key\"*\"&&\"",
-        "二次跳转播放链接": "https://www.jfxz689.com/API.php;post;url=+\"url\"*\"&&\"+&time=+\"time\"*\"&&\"+&key=+\"key\"*\"&&\"",
-        "三次跳转播放链接": "\"url\"*\"&&\""
-      }
-    },
-    {
-      "key": "暴风",
-      "name": "️🎐️┃暴风┃影视",
-      "type": 3,
-      "api": "csp_XBPQ",
-      "playerType": 1,
-      "ext": "http://我不是.肥猫.love:63/json/暴风.json"
-    },
-    {
       "key": "csp_Lgyy",
       "name": "🌀┃蓝光┃影视",
       "type": 3,
@@ -186,16 +190,6 @@
       "playerType": 1
     },
     {
-      "key": "csp_555",
-      "name": "5️⃣️┃555┃影视",
-      "type": 3,
-      "api": "csp_Ys555",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "https://www.555dyy1.com/"
-    },
-    {
       "key": "csp_Auete",
       "name": "🏝┃Aue ┃影视",
       "type": 3,
@@ -205,15 +199,11 @@
       "filterable": 1
     },
     {
-      "key": "酷云",
-      "name": "😎┃酷云┃影视",
+      "key": "布蕾",
+      "name": "🌞┃布蕾┃影视",
       "type": 3,
-      "api": "csp_AppYsV2",
-      "ext": "https://ys.realdou.cn/api.php/app/",
-      "categories": [
-        "4K电影",
-        "4K电视剧"
-      ]
+      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
+      "ext": "http://alist.xn--z7x900a.love:63/布蕾.jsd"
     },
     {
       "key": "狐狸",
@@ -353,15 +343,6 @@
       "filterable": 1
     },
     {
-      "key": "csp_Ysj",
-      "name": "🐲┃异界┃动漫",
-      "type": 3,
-      "api": "csp_Ysj",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "csp_Anime1",
       "name": "💀┃日本┃动漫",
       "type": 3,
@@ -381,97 +362,68 @@
       "playerType": 2
     },
     {
-      "key": "csp_BBB",
-      "name": "🅱┃哔哩┃合集",
+      "key": "csp_search_七夜",
+      "name": "👴┃七夜┃搜索",
       "type": 3,
-      "api": "csp_Bili",
+      "api": "csp_Dovx",
       "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 1,
-      "ext": "http://我不是.肥猫.love:63/json/bili.json"
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
-      "key": "csp_戏曲",
-      "name": "🅱┃哔哩┃戏曲",
+      "key": "csp_search_PanSearch",
+      "name": "🗂️┃盘搜┃搜索",
       "type": 3,
-      "api": "csp_Bili",
+      "api": "csp_PanSearch",
       "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 1,
-      "ext": "http://我不是.肥猫.love:63/json/戏曲.json"
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
-      "key": "演唱会",
-      "name": "🅱┃哔哩┃音乐",
+      "key": "csp_search_Yisou",
+      "name": "🐏┃易搜┃搜索",
       "type": 3,
-      "api": "csp_Bili",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 1,
-      "ext": "http://我不是.肥猫.love:63/json/ych.json"
+      "api": "csp_YiSo",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
-      "key": "csp_XPath_企鹅体育",
-      "name": "🐧┃企鹅┃体育",
+      "key": "csp_search_Zhaozy",
+      "name": "🐑┃资源┃搜索",
       "type": 3,
-      "api": "csp_XPath",
-      "searchable": 0,
+      "api": "csp_Zhaozy",
+      "playerType": 1,
+      "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
-      "ext": "http://我不是.肥猫.love:63/json/企鹅直播.json"
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt$$$feimao$$$123456"
     },
     {
-      "key": "dr_88看球",
-      "name": "🏀┃八八┃看球",
+      "key": "csp_search_Upyunso",
+      "name": "🐐┃云搜┃搜索",
       "type": 3,
-      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
-      "searchable": 0,
-      "quickSearch": 0,
+      "api": "csp_UpYun",
+      "playerType": 1,
+      "searchable": 1,
+      "quickSearch": 1,
       "filterable": 0,
-      "ext": "http://alist.xn--z7x900a.love:63/88看球.js"
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
-      "key": "drpy_js_JRKAN直播",
-      "name": "🏀┃JRS┃看球",
+      "key": "csp_search_Alips",
+      "name": "🦌┃盘搜┃搜索",
       "type": 3,
-      "api": "http://alist.xn--z7x900a.love:63/drpy2.min.js",
-      "ext": "http://alist.xn--z7x900a.love:63/JRKAN直播.js"
-    },
-    {
-      "key": "csp_Nbys",
-      "name": "✈┃泥巴┃墙外",
-      "type": 3,
-      "api": "csp_NiNi",
+      "api": "csp_PanSou",
+      "playerType": 1,
       "searchable": 1,
       "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "csp_trj",
-      "name": "✈┃唐人┃墙外",
-      "type": 3,
-      "api": "csp_Tangrenjie",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "csp_If101",
-      "name": "✈┃If10 ┃墙外",
-      "type": 3,
-      "api": "csp_If101",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "csp_Xiaoh",
-      "name": "✈┃小宝┃墙外",
-      "type": 3,
-      "api": "csp_Xiaoh",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
     },
     {
       "key": "儿童",
@@ -512,6 +464,24 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "http://52bsj.vip:81/api/v3/file/get/61580/%E9%AB%98%E4%B8%AD%E8%AF%BE%E5%A0%82.json?sign=ESNTJf_EMO0ch_J5j-kV35jFLeg1GvG4VJjUqW2DJCc%3D%3A0"
+    },
+    {
+      "key": "push_agent",
+      "name": "▶┃推送┃磁力",
+      "type": 3,
+      "api": "csp_Push",
+      "playerType": 1,
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0,
+      "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
+    },
+    {
+      "key": "ext_live_protocol",
+      "name": "关注公众号“肥猫不肥”",
+      "type": 3,
+      "api": "http://alist.xn--z7x900a.love:63/协议.js",
+      "ext": "clan://proxy?sourcekey=ext_live_protocol"
     }
   ],
   "lives": [
@@ -530,7 +500,7 @@
         {
           "name": "redirect",
           "urls": [
-            "proxy://do=live&type=txt&ext=aHR0cDovL+aIkeS4jeaYry7ogqXnjKsubG92ZTo2My9UVi90dnpiLnR4dA=="
+            "proxy://do=live&type=txt&ext=aHR0cDovL3huLS1paHF1MTBjbjRjLnhuLS16N3g5MDBhLmxvdmU6NjMvVFYvdHZ6Yi50eHQ="
           ]
         }
       ]
