@@ -3,7 +3,7 @@ import json
 import ast
 list={
   'fatCat':'http://肥猫.live',
-  'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json'
+  #'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json'
   }
 configList={}
 headers={
@@ -16,6 +16,7 @@ for key,value in list.items():
     start=r.text.index('{')
     end=r.text.rindex('}')
     configList[key]=json.loads(r.text[start:end+1])
+    
 
 #配置主体内容
 if 'fatCat' in configList:
@@ -23,17 +24,19 @@ if 'fatCat' in configList:
 elif 'YourSmile' in configList:
   customConfig=configList['YourSmile']
 
-#提取解析parses
-
-#提取lives
-if 'YourSmile' in configList:
-  lives=configList['YourSmile']['lives']
-
-#配置customConfig及写入文件
 if customConfig :
-  customConfig['lives']=lives
+  #提取解析parses
+  
+  #提取lives
+  lives=[]
+  if 'YourSmile' in configList:
+    lives=configList['YourSmile']['lives']
+    customConfig['lives']=lives
+
+  #配置customConfig及写入文件
   with open("./config.json", "w",encoding='utf-8') as file:
     # 使用json.dump将数据写入文件
+    print(customConfig)
     json.dump(customConfig,file,ensure_ascii=False)
     
 
