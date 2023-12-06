@@ -3,7 +3,7 @@ import json
 import ast
 list={
   'fatCat':'http://肥猫.live',
-  #'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json'
+  'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json'
   }
 configList={}
 headers={
@@ -13,6 +13,7 @@ headers={
 for key,value in list.items():
   r=requests.get(value,headers=headers)
   if r.status_code==200:
+    r.encoding='utf-8'
     start=r.text.index('{')
     end=r.text.rindex('}')
     configList[key]=json.loads(r.text[start:end+1])
