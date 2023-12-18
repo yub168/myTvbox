@@ -493,6 +493,34 @@
       "playerType": "1",
       "searchable": 0,
       "ext": "http://127.0.0.1:9978/file/fatcat/token.txt"
+    },
+    {
+      "key": "drpy_js_农民",
+      "name": "影视 | 农民[js]",
+      "type": 3,
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/农民影视.js"
+    },
+    {
+      "key": "drpy_js_米爱影视",
+      "name": "影视 | 米爱影视[js]",
+      "type": 3,
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/米爱影视.js"
+    },
+    {
+      "key": "drpy_js_奇优影院",
+      "name": "影视 | 奇优影院[js]",
+      "type": 3,
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/奇优影院.js"
+    },
+    {
+      "key": "drpy_js_秋霞影院",
+      "name": "影视 | 秋霞影院[js]",
+      "type": 3,
+      "api": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/libs/drpy2.min.js",
+      "ext": "https://ghproxy.net/https://raw.githubusercontent.com/hjdhnx/dr_py/main/js/秋霞.js"
     }
   ],
   "parses": [
