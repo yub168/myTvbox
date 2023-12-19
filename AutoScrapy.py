@@ -8,7 +8,8 @@ list={
   'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json',
   '道长':'https://pastebin.com/raw/5NHaxyGR',
   '香雅情':'https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json',
-  'OK佬':'https://github.moeyy.xyz/https://raw.githubusercontent.com/okcaptain/okjar/rm/ok.json'
+  'OK佬':'https://github.moeyy.xyz/https://raw.githubusercontent.com/okcaptain/okjar/rm/ok.json',
+  '小米':'http://xhww.fun:63/小米/DEMO.json'
   }
 configList={}
 customConfig={}
@@ -17,11 +18,13 @@ headers={
   "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
   }
 for key,value in list.items():
-  r=requests.get(value,headers=headers)
-  if r.status_code==200:
-    r.encoding='utf-8'
-    configList[key]=json5.loads(r.text)
-    
+  try:
+    r=requests.get(value,headers=headers, timeout=3.0)
+    if r.status_code==200:
+      r.encoding='utf-8'
+      configList[key]=json5.loads(r.text)
+  except requests.exceptions.RequestException as e:  
+    print(e)
 
 # 配置主体内容
 if 'fatCat' in configList:
@@ -30,6 +33,8 @@ elif 'YourSmile' in configList:
   customConfig=configList['YourSmile']
 elif '香雅情' in configList:
   customConfig=configList['香雅情']
+elif '道长' in configList:
+  customConfig=configList['道长']
 
 # 给主体添加部分site
 if '道长' in configList:
@@ -56,6 +61,14 @@ if customConfig :
   if 'OK佬' in configList and not parses:
     parses=configList['OK佬']['parses']
     customConfig['parses']=parses
+  if '小米' in configList:
+    parses=configList['小米']['parses']
+    for parse in parses:
+      if '稻香' in parse['name']:
+        customConfig['parses'].append(parse)
+      if 'YuMi-vip' in parse['name']:
+        customConfig['parses'].append(parse)
+
 
   # 提取lives
   lives=[]
