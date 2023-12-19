@@ -64,7 +64,7 @@ if customConfig :
     customConfig['parses']=parses
   if '小米' in configList:
     parses=configList['小米']['parses']
-    print('xiaomi parses')
+    #print('xiaomi parses')
     for parse in parses:
       if '稻香' in parse['name']:
         customConfig['parses'].append(parse)
