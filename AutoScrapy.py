@@ -7,7 +7,8 @@ list={
   'fatCat':'http://肥猫.live',
   'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json',
   '道长':'https://pastebin.com/raw/5NHaxyGR',
-  '香雅情':'https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json'
+  '香雅情':'https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json',
+  'OK佬':'https://github.moeyy.xyz/https://raw.githubusercontent.com/okcaptain/okjar/rm/ok.json'
   }
 configList={}
 customConfig={}
@@ -48,13 +49,21 @@ if '道长' in configList:
 if customConfig :
 
   # 提取解析parses
-  if '香雅情' in configList:
+  parses=[]
+  if '香雅情' in configList and not parses:
     parses=configList['香雅情']['parses']
+    customConfig['parses']=parses
+  if 'OK佬' in configList and not parses:
+    parses=configList['OK佬']['parses']
     customConfig['parses']=parses
 
   # 提取lives
-  if 'YourSmile' in configList:
+  lives=[]
+  if 'YourSmile' in configList and not lives:
     lives=configList['YourSmile']['lives']
+    customConfig['lives']=lives
+  if 'OK佬' in configList and not lives:
+    lives=configList['OK佬']['lives']
     customConfig['lives']=lives
 
   # 配置customConfig及写入文件
