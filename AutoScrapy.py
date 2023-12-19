@@ -3,6 +3,7 @@ import json
 import ast
 import re
 import json5
+import datetime
 list={
   'fatCat':'http://肥猫.live',
   'YourSmile':'https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json',
@@ -63,6 +64,7 @@ if customConfig :
     customConfig['parses']=parses
   if '小米' in configList:
     parses=configList['小米']['parses']
+    print('xiaomi parses')
     for parse in parses:
       if '稻香' in parse['name']:
         customConfig['parses'].append(parse)
@@ -82,7 +84,7 @@ if customConfig :
   # 配置customConfig及写入文件
   with open("./config.json", "w",encoding='utf-8') as file:
     # 使用json.dump将数据写入文件
-    print(customConfig)
+    print('抓取时间：\t',datetime.datetime.now())
     json.dump(customConfig,file,ensure_ascii=False)
     
 
