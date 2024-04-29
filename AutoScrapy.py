@@ -23,7 +23,8 @@ for key,value in list.items():
     r=requests.get(value,headers=headers, timeout=3.0)
     if r.status_code==200:
       r.encoding='utf-8'
-      configList[key]=json5.loads(r.text)
+      data=json5.loads(r.text)
+      configList[key]=data
   except requests.exceptions.RequestException as e:  
     print(e)
 
@@ -38,18 +39,7 @@ elif '道长' in configList:
   customConfig=configList['道长']
 
 # 给主体添加部分site
-if '道长' in configList:
-  # 添加农民site
-  sites=configList['道长']['sites']
-  for site in sites:
-    if '农民' in site['key']:
-      customConfig['sites'].append(site)
-    if '秋霞影院' in site['key']:
-      customConfig['sites'].append(site)
-    if '奇优影院' in site['key']:
-      customConfig['sites'].append(site)
-    if '米爱影视' in site['key']:
-      customConfig['sites'].append(site)
+
   
 
 if customConfig :
@@ -63,13 +53,14 @@ if customConfig :
     parses=configList['OK佬']['parses']
     customConfig['parses']=parses
   if '小米' in configList:
-    parses=configList['小米']['parses']
+    parses=configList['小米'].get('parses')
     #print('xiaomi parses')
-    for parse in parses:
-      if '稻香' in parse['name']:
-        customConfig['parses'].append(parse)
-      if 'YuMi-vip' in parse['name']:
-        customConfig['parses'].append(parse)
+    if parses:
+      for parse in parses:
+        if '稻香' in parse['name']:
+          customConfig['parses'].append(parse)
+        if 'YuMi-vip' in parse['name']:
+          customConfig['parses'].append(parse)
 
 
   # 提取lives
@@ -88,5 +79,5 @@ if customConfig :
     json.dump(customConfig,file,ensure_ascii=False)
     
 
-
+print('test')
 
