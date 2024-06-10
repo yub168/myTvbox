@@ -100,8 +100,8 @@ def setLives(customConfig,configList):
   # 提取lives
   print('设置直播')
   lives=[]
-  if 'YourSmile' in configList and not lives:
-    lives=configList['YourSmile']['lives']
+  if 'mi' in configList and not lives:
+    lives=configList['mi']['lives']
     customConfig['lives']=lives
   if 'OK佬' in configList and not lives:
     lives=configList['OK佬']['lives']
@@ -136,6 +136,7 @@ def start():
   list={
   'fatCat':'http://like.肥猫.com/你好',
   '饭太硬':"http://www.饭太硬.com/tv",
+  'mi':"http://mi.xxooo.shop",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '道长':'https://pastebin.com/raw/5NHaxyGR',
   '香雅情':'https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json',
@@ -149,7 +150,7 @@ def start():
   saveConfig(customConfig)
 
 if "__name__==__main__":
-  # url='http://like.肥猫.com/你好'
+  # url='http://mi.xxooo.shop'
   # testInterface(url)
   start()
 
