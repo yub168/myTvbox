@@ -97,14 +97,33 @@ def setParise(customConfig,configList):
 def setLives(customConfig,configList):
   # 提取lives
   print('设置直播')
+  url='https://gitee.com/yub168/myTvbox/raw/master/live.txt'
   lives=[]
   if 'mi' in configList and not lives:
+    print('lives 配置为 mi')
     lives=configList['mi']['lives']
-    customConfig['lives']=lives
   if 'OK佬' in configList and not lives:
+    print('lives 配置为 OK佬')
     lives=configList['OK佬']['lives']
-    customConfig['lives']=lives
-
+    
+  if lives:
+    liveUrl=lives[0].get('url')
+    if liveUrl:
+      response = requests.get(liveUrl)
+      # 检查请求是否成功
+      if response.status_code == 200:
+          # 获取响应内容
+          data = response.text
+          # 打开文件进行写入
+          with open('./live.txt', 'w',encoding='utf-8') as file:
+              file.write(data)
+          print('数据已保存到 live.txt')
+          lives[0]['url']=url
+          customConfig['lives']=lives
+      else:
+          print('请求失败，状态码:', response.status_code)
+    else:
+      print('没有live地址！')
 def saveConfig(customConfig):
   
   if customConfig:
