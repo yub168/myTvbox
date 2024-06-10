@@ -119,7 +119,7 @@ def saveConfig(customConfig):
 
 def start():
   list={
-  'fatCat':'http://肥猫.live',
+  'fatCat':'http://肥猫.com',
   '饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '道长':'https://pastebin.com/raw/5NHaxyGR',
