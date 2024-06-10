@@ -51,8 +51,6 @@ def getConfig(list):
       if r.status_code==200:
         r.encoding='utf-8'
         jsonText=FindResult(r.text,'')
-        if key=='fatCat':
-           print(jsonText)
         data=json5.loads(jsonText)
         configList[key]=data
     except requests.exceptions.RequestException as e:  
