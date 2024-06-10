@@ -51,8 +51,8 @@ def getConfig(list):
       if r.status_code==200:
         r.encoding='utf-8'
         jsonText=FindResult(r.text,'')
-        # if key=='王小二':
-        #   print(jsonText)
+        if key=='fatCat':
+           print(jsonText)
         data=json5.loads(jsonText)
         configList[key]=data
     except requests.exceptions.RequestException as e:  
@@ -66,8 +66,8 @@ def setConfig(configList):
     customConfig=configList['fatCat']
   elif '饭太硬' in configList:
     customConfig=configList['饭太硬']
-  elif 'YourSmile' in configList:
-    customConfig=configList['YourSmile']
+  elif 'OK佬' in configList:
+    customConfig=configList['OK佬']
   elif '香雅情' in configList:
     customConfig=configList['香雅情']
   elif '道长' in configList:
@@ -117,9 +117,24 @@ def saveConfig(customConfig):
       print('抓取时间：\t',datetime.datetime.now())
       json.dump(customConfig,file,ensure_ascii=False)
 
+def testInterface(url):
+  headers={
+  "User-Agent":"okhttp/3.15",
+  "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+  }
+  try:
+      r=requests.get(url,headers=headers, timeout=3.0)
+      if r.status_code==200:
+        r.encoding='utf-8'
+        jsonText=FindResult(r.text,'')
+        data=json5.loads(jsonText)
+        print(data)
+  except requests.exceptions.RequestException as e:  
+      print(e)
+
 def start():
   list={
-  'fatCat':'http://肥猫.com',
+  'fatCat':'http://like.肥猫.com/你好',
   '饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '道长':'https://pastebin.com/raw/5NHaxyGR',
@@ -134,5 +149,7 @@ def start():
   saveConfig(customConfig)
 
 if "__name__==__main__":
+  # url='http://like.肥猫.com/你好'
+  # testInterface(url)
   start()
 
