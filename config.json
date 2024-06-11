@@ -625,7 +625,7 @@
       "name": "live",
       "type": 0,
       "playerType": 1,
-      "url": "https://gitee.com/yub168/myTvbox/raw/master/live.txt",
+      "url": "https://github.com/yub168/myTvbox/raw/master/live.txt",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     }
