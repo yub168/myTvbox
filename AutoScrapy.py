@@ -97,7 +97,7 @@ def setParise(customConfig,configList):
 def setLives(customConfig,configList):
   # 提取lives
   print('设置直播')
-  url='https://gitee.com/yub168/myTvbox/raw/master/live.txt'
+  url='https://github.com/yub168/myTvbox/raw/master/live.txt'
   lives=[]
   if 'mi' in configList and not lives:
     print('lives 配置为 mi')
