@@ -1,4 +1,5 @@
 #!/bin/sh -e
+cd /home/yub168/myTvbox
 git pull origin master
 python3 AutoScrapy.py
 git add .
