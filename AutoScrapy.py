@@ -168,7 +168,7 @@ def start():
   saveConfig(customConfig)
 
 if "__name__==__main__":
-  # url='http://mi.xxooo.shop'
+  # url='http://like.肥猫.com/你好'
   # testInterface(url)
   start()
 
