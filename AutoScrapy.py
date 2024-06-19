@@ -112,19 +112,19 @@ def setLives(customConfig,configList):
     if liveUrl:
       if '127.0.0.1:9978/proxy' in liveUrl:
         liveUrl=liveUrl.split('url=')[1]
-        response = requests.get(liveUrl)
-        # 检查请求是否成功
-        if response.status_code == 200:
-            # 获取响应内容
-            data = response.text
-            # 打开文件进行写入
-            with open('./live.txt', 'w',encoding='utf-8') as file:
-                file.write(data)
-            print('数据已保存到 live.txt')
-            lives[0]['url']=url
-            customConfig['lives']=lives
-        else:
-            print('请求失败，状态码:', response.status_code)
+      response = requests.get(liveUrl)
+      # 检查请求是否成功
+      if response.status_code == 200:
+          # 获取响应内容
+          data = response.text
+          # 打开文件进行写入
+          with open('./live.txt', 'w',encoding='utf-8') as file:
+              file.write(data)
+          print('数据已保存到 live.txt')
+          lives[0]['url']=url
+          customConfig['lives']=lives
+      else:
+          print('请求失败，状态码:', response.status_code)
     else:
       print('没有live地址！')
 def saveConfig(customConfig):
