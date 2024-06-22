@@ -89,3 +89,25 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-06-21 18:08:25.225945
+[master 56c91d6] update
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   7b84d9f..56c91d6  master -> master
+error: RPC failed; curl 16 Error in the HTTP2 framing layer
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+数据已保存到 live.txt
+设置解析
+保存配置
+抓取时间：	 2024-06-22 08:08:27.591433
