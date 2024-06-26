@@ -84,15 +84,7 @@ def setParise(customConfig,configList):
     if 'OK佬' in configList and not parses:
       parses=configList['OK佬']['parses']
       customConfig['parses']=parses
-    if '小米' in configList:
-      parses=configList['小米'].get('parses')
-      #print('xiaomi parses')
-      if parses:
-        for parse in parses:
-          if '稻香' in parse['name']:
-            customConfig['parses'].append(parse)
-          if 'YuMi-vip' in parse['name']:
-            customConfig['parses'].append(parse)
+    
 
 def setLives(customConfig,configList):
   # 提取lives
@@ -120,13 +112,14 @@ def setLives(customConfig,configList):
           # 打开文件进行写入
           with open('./live.txt', 'w',encoding='utf-8') as file:
               file.write(data)
-          print('数据已保存到 live.txt')
+          #print('数据已保存到 live.txt')
           lives[0]['url']=url
           customConfig['lives']=lives
       else:
           print('请求失败，状态码:', response.status_code)
     else:
       print('没有live地址！')
+
 def saveConfig(customConfig):
   
   if customConfig:
