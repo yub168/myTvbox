@@ -250,3 +250,40 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-06-25 18:08:29.320075
+[master 918268b] update
+ 1 file changed, 20 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   e6db950..918268b  master -> master
+To https://github.com/yub168/myTvbox.git
+   e6db950..918268b  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "<" at column 1
+Traceback (most recent call last):
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 175, in <module>
+    start()
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 166, in start
+    configList=getConfig(list)
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 54, in getConfig
+    data=json5.loads(jsonText)
+  File "/usr/local/lib/python3.10/dist-packages/json5/lib.py", line 77, in loads
+    raise ValueError('Empty strings are not legal JSON5')
+ValueError: Empty strings are not legal JSON5
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+   918268b..1701173  master     -> origin/master
+Updating 918268b..1701173
+Fast-forward
+ AutoScrapy.py | 13 +++----------
+ 1 file changed, 3 insertions(+), 10 deletions(-)
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-06-26 18:08:26.496307
