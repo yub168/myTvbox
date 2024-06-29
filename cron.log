@@ -383,3 +383,22 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-06-29 08:08:26.383001
+[master 8ea7271] update
+ 1 file changed, 20 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   79d811c..8ea7271  master -> master
+To https://github.com/yub168/myTvbox.git
+   79d811c..8ea7271  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['饭太硬', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-06-29 18:08:23.218680
