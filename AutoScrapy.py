@@ -66,8 +66,8 @@ def setConfig(configList):
     customConfig=configList['饭太硬']
   elif 'OK佬' in configList:
     customConfig=configList['OK佬']
-  elif '香雅情' in configList:
-    customConfig=configList['香雅情']
+  elif 'mi' in configList:
+    customConfig=configList['mi']
   elif '道长' in configList:
     customConfig=configList['道长']
   return customConfig
@@ -147,7 +147,7 @@ def testInterface(url):
 
 def start():
   list={
-  'fatCat':'http://like.肥猫.com/你好',
+  'fatCat':'http://肥猫.com/',
   '饭太硬':"http://www.饭太硬.com/tv",
   'mi':"http://mi.xxooo.shop",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
@@ -163,7 +163,7 @@ def start():
   saveConfig(customConfig)
 
 if "__name__==__main__":
-  # url='http://ok321.top/tv'
+  # url='https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json'
   # testInterface(url)
   start()
 
