@@ -770,3 +770,24 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-09 18:08:33.445792
+[master 5569070] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (97%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   4e8eb52..5569070  master -> master
+To https://github.com/yub168/myTvbox.git
+   13b5020..5569070  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPConnectionPool(host='www.xn--sss604efuw.com', port=80): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-10 08:08:28.111103
