@@ -976,3 +976,20 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-15 08:08:25.845713
+[master 0446136] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   e78b319..0446136  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-15 18:08:25.571003
