@@ -1103,3 +1103,23 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-18 18:08:16.498074
+[master d2db80c] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (73%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   df4601a..d2db80c  master -> master
+To https://github.com/yub168/myTvbox.git
+   66b873f..d2db80c  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-19 08:08:17.114491
