@@ -1276,3 +1276,24 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-23 08:08:24.137848
+[master 57b0947] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag c04a57af        
+To https://gitee.com/yub168/myTvbox.git
+   54eb3d3..57b0947  master -> master
+To https://github.com/yub168/myTvbox.git
+   aa7af52..57b0947  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPConnectionPool(host='tvbox.xn--4kq62z5rby2qupq9ub.xyz', port=80): Read timed out. (read timeout=3.0)
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-23 18:08:24.976294
