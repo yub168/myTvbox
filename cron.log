@@ -1358,3 +1358,22 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-25 08:08:24.762108
+[master e112db3] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 7047faa8        
+To https://gitee.com/yub168/myTvbox.git
+   c79f64d..e112db3  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7facfe47dba0>, 'Connection to ghproxy.net timed out. (connect timeout=3.0)'))
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-25 18:08:22.441972
