@@ -1377,3 +1377,23 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-07-25 18:08:22.441972
+[master aa621cb] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (91%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 7c45d293        
+To https://gitee.com/yub168/myTvbox.git
+   e112db3..aa621cb  master -> master
+To https://github.com/yub168/myTvbox.git
+   c79f64d..aa621cb  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-26 08:08:27.248258
