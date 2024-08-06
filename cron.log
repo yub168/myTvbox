@@ -402,3 +402,1077 @@ lives 配置为 mi
 设置解析
 保存配置
 抓取时间：	 2024-06-29 18:08:23.218680
+[master de18d72] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   8ea7271..de18d72  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+   de18d72..2cf380b  master     -> origin/master
+Updating de18d72..2cf380b
+Fast-forward
+ AutoScrapy.py |   8 +-
+ config.json   | 653 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 656 insertions(+), 5 deletions(-)
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-06-30 08:08:29.869273
+[master ce6fc5a] update
+ 2 files changed, 25 insertions(+), 652 deletions(-)
+ rewrite config.json (99%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   2cf380b..ce6fc5a  master -> master
+To https://github.com/yub168/myTvbox.git
+   8ea7271..ce6fc5a  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-06-30 18:08:30.733325
+[master 3991bf7] update
+ 2 files changed, 1180 insertions(+), 1159 deletions(-)
+ rewrite live.txt (93%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   ce6fc5a..3991bf7  master -> master
+To https://github.com/yub168/myTvbox.git
+   ce6fc5a..3991bf7  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-01 08:08:31.777989
+[master 2da7550] update
+ 1 file changed, 21 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   3991bf7..2da7550  master -> master
+To https://github.com/yub168/myTvbox.git
+   3991bf7..2da7550  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-01 18:08:28.024650
+[master 5036c69] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   2da7550..5036c69  master -> master
+To https://github.com/yub168/myTvbox.git
+   2da7550..5036c69  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-02 08:08:31.256994
+[master f2221a4] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   5036c69..f2221a4  master -> master
+To https://github.com/yub168/myTvbox.git
+   5036c69..f2221a4  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-02 18:08:28.581819
+[master 53de614] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   f2221a4..53de614  master -> master
+To https://github.com/yub168/myTvbox.git
+   f2221a4..53de614  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-03 08:08:29.395142
+[master bb3697e] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   53de614..bb3697e  master -> master
+To https://github.com/yub168/myTvbox.git
+   53de614..bb3697e  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-03 18:08:30.006594
+[master 7a8cda8] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   bb3697e..7a8cda8  master -> master
+To https://github.com/yub168/myTvbox.git
+   bb3697e..7a8cda8  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-04 08:08:29.543868
+[master 5f80a93] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   7a8cda8..5f80a93  master -> master
+To https://github.com/yub168/myTvbox.git
+   7a8cda8..5f80a93  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-04 18:08:29.968950
+[master 12cceec] update
+ 2 files changed, 1330 insertions(+), 1158 deletions(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   5f80a93..12cceec  master -> master
+To https://github.com/yub168/myTvbox.git
+   5f80a93..12cceec  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-05 08:08:27.133596
+[master 821f41c] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   12cceec..821f41c  master -> master
+To https://github.com/yub168/myTvbox.git
+   12cceec..821f41c  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-05 18:08:30.173189
+[master 04d39cb] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   821f41c..04d39cb  master -> master
+To https://github.com/yub168/myTvbox.git
+   821f41c..04d39cb  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-06 08:08:28.335576
+[master 223841a] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   04d39cb..223841a  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Traceback (most recent call last):
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 168, in <module>
+    start()
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 159, in start
+    configList=getConfig(list)
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 54, in getConfig
+    data=json5.loads(jsonText)
+  File "/usr/local/lib/python3.10/dist-packages/json5/lib.py", line 81, in loads
+    raise ValueError(err)
+ValueError: <string>:53 Unexpected "d" at column 132
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Traceback (most recent call last):
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 168, in <module>
+    start()
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 159, in start
+    configList=getConfig(list)
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 54, in getConfig
+    data=json5.loads(jsonText)
+  File "/usr/local/lib/python3.10/dist-packages/json5/lib.py", line 81, in loads
+    raise ValueError(err)
+ValueError: <string>:53 Unexpected "d" at column 118
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPConnectionPool(host='www.xn--sss604efuw.com', port=80): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-07 18:08:32.790000
+[master 13b5020] update
+ 2 files changed, 47 insertions(+), 1 deletion(-)
+ rewrite config.json (95%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   223841a..13b5020  master -> master
+To https://github.com/yub168/myTvbox.git
+   04d39cb..13b5020  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Traceback (most recent call last):
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 168, in <module>
+    start()
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 159, in start
+    configList=getConfig(list)
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 54, in getConfig
+    data=json5.loads(jsonText)
+  File "/usr/local/lib/python3.10/dist-packages/json5/lib.py", line 81, in loads
+    raise ValueError(err)
+ValueError: <string>:53 Unexpected "d" at column 118
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Traceback (most recent call last):
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 168, in <module>
+    start()
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 159, in start
+    configList=getConfig(list)
+  File "/home/yub168/myTvbox/AutoScrapy.py", line 54, in getConfig
+    data=json5.loads(jsonText)
+  File "/usr/local/lib/python3.10/dist-packages/json5/lib.py", line 81, in loads
+    raise ValueError(err)
+ValueError: <string>:53 Unexpected "d" at column 118
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-09 08:08:30.189969
+[master 4e8eb52] update
+ 1 file changed, 48 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   13b5020..4e8eb52  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-09 18:08:33.445792
+[master 5569070] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (97%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   4e8eb52..5569070  master -> master
+To https://github.com/yub168/myTvbox.git
+   13b5020..5569070  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPConnectionPool(host='www.xn--sss604efuw.com', port=80): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "ÿ" at column 1
+设置主配置 ['fatCat', 'mi', '王小二', '道长', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-10 08:08:28.111103
+[master 8b58fa9] update
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   5569070..8b58fa9  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-10 18:08:27.385459
+[master c534699] update
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   8b58fa9..c534699  master -> master
+To https://github.com/yub168/myTvbox.git
+   5569070..c534699  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-11 08:08:24.035038
+[master 15ae11a] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   c534699..15ae11a  master -> master
+To https://github.com/yub168/myTvbox.git
+   c534699..15ae11a  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPSConnectionPool(host='xn--z7x900a.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f1f0b917160>, 'Connection to xn--z7x900a.com timed out. (connect timeout=3.0)'))
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-11 18:08:24.588401
+[master ed102ac] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ rewrite config.json (98%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   15ae11a..ed102ac  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-12 08:08:23.946411
+[master 85f6ca9] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (99%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   ed102ac..85f6ca9  master -> master
+To https://github.com/yub168/myTvbox.git
+   15ae11a..85f6ca9  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-12 18:08:28.885448
+[master 62533ee] update
+ 1 file changed, 20 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   85f6ca9..62533ee  master -> master
+To https://github.com/yub168/myTvbox.git
+   85f6ca9..62533ee  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-13 08:08:23.538643
+[master aa272cb] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   62533ee..aa272cb  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-13 18:08:25.412587
+[master a4c5d99] update
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   aa272cb..a4c5d99  master -> master
+To https://github.com/yub168/myTvbox.git
+   62533ee..a4c5d99  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-14 08:08:24.807648
+[master 4207cae] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   a4c5d99..4207cae  master -> master
+To https://github.com/yub168/myTvbox.git
+   a4c5d99..4207cae  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-14 18:08:25.098566
+[master e78b319] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   4207cae..e78b319  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-15 08:08:25.845713
+[master 0446136] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   e78b319..0446136  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-15 18:08:25.571003
+[master 745944b] update
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+ rewrite config.json (84%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   0446136..745944b  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-16 08:08:27.494574
+[master 85bf6d2] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (82%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   745944b..85bf6d2  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-16 18:08:29.032227
+[master d456660] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   85bf6d2..d456660  master -> master
+To https://github.com/yub168/myTvbox.git
+   4207cae..d456660  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-17 08:08:31.172513
+[master 66b873f] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   d456660..66b873f  master -> master
+To https://github.com/yub168/myTvbox.git
+   d456660..66b873f  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-17 18:08:27.670970
+[master 700cbbb] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   66b873f..700cbbb  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '道长', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-18 08:08:28.121250
+[master df4601a] update
+ 1 file changed, 18 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   700cbbb..df4601a  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-18 18:08:16.498074
+[master d2db80c] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (73%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   df4601a..d2db80c  master -> master
+To https://github.com/yub168/myTvbox.git
+   66b873f..d2db80c  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-19 08:08:17.114491
+[master efa29dd] update
+ 1 file changed, 20 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   d2db80c..efa29dd  master -> master
+To https://github.com/yub168/myTvbox.git
+   d2db80c..efa29dd  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-19 18:08:25.160069
+[master 1524172] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   efa29dd..1524172  master -> master
+To https://github.com/yub168/myTvbox.git
+   efa29dd..1524172  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-20 08:08:24.954081
+[master b165c4f] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   1524172..b165c4f  master -> master
+To https://github.com/yub168/myTvbox.git
+   1524172..b165c4f  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPSConnectionPool(host='xn--z7x900a.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7f9416987160>, 'Connection to xn--z7x900a.com timed out. (connect timeout=3.0)'))
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-20 18:08:19.770106
+[master 161fb38] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ rewrite config.json (99%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   b165c4f..161fb38  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': Error in the HTTP2 framing layer
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-21 08:08:19.585335
+[master 7cfba0e] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (99%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   161fb38..7cfba0e  master -> master
+To https://github.com/yub168/myTvbox.git
+   b165c4f..7cfba0e  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-21 18:08:22.677342
+[master aa7af52] update
+ 1 file changed, 20 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   7cfba0e..aa7af52  master -> master
+To https://github.com/yub168/myTvbox.git
+   7cfba0e..aa7af52  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+Port could not be cast to integer value as ':'
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-22 08:08:17.872677
+[master 38c3eb1] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   aa7af52..38c3eb1  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-22 18:08:19.206252
+[master 54eb3d3] update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ rewrite config.json (97%)
+remote: Powered by [01;33mGITEE.COM [0m[[01;35mGNK-6.4[0m][0m        
+To https://gitee.com/yub168/myTvbox.git
+   38c3eb1..54eb3d3  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-23 08:08:24.137848
+[master 57b0947] update
+ 1 file changed, 19 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag c04a57af        
+To https://gitee.com/yub168/myTvbox.git
+   54eb3d3..57b0947  master -> master
+To https://github.com/yub168/myTvbox.git
+   aa7af52..57b0947  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPConnectionPool(host='tvbox.xn--4kq62z5rby2qupq9ub.xyz', port=80): Read timed out. (read timeout=3.0)
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-23 18:08:24.976294
+[master a7c53bd] update
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+ rewrite config.json (98%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag de4d96b3        
+To https://gitee.com/yub168/myTvbox.git
+   57b0947..a7c53bd  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-24 08:08:22.956588
+[master 6925968] update
+ 1 file changed, 21 insertions(+)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag a84a7197        
+To https://gitee.com/yub168/myTvbox.git
+   a7c53bd..6925968  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPConnectionPool(host='tvbox.xn--4kq62z5rby2qupq9ub.xyz', port=80): Read timed out. (read timeout=3.0)
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-24 18:08:29.186150
+[master c79f64d] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ rewrite config.json (97%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag e345128d        
+To https://gitee.com/yub168/myTvbox.git
+   6925968..c79f64d  master -> master
+To https://github.com/yub168/myTvbox.git
+   57b0947..c79f64d  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-25 08:08:24.762108
+[master e112db3] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 7047faa8        
+To https://gitee.com/yub168/myTvbox.git
+   c79f64d..e112db3  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Max retries exceeded with url: /https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7facfe47dba0>, 'Connection to ghproxy.net timed out. (connect timeout=3.0)'))
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-25 18:08:22.441972
+[master aa621cb] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (91%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 7c45d293        
+To https://gitee.com/yub168/myTvbox.git
+   e112db3..aa621cb  master -> master
+To https://github.com/yub168/myTvbox.git
+   c79f64d..aa621cb  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-26 08:08:27.248258
+[master dee8e83] update
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 9c4b3e88        
+To https://gitee.com/yub168/myTvbox.git
+   aa621cb..dee8e83  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+HTTPSConnectionPool(host='xn--z7x900a.com', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-26 18:08:21.886161
+[master 8a0db15] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (98%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 14477996        
+To https://gitee.com/yub168/myTvbox.git
+   dee8e83..8a0db15  master -> master
+fatal: unable to access 'https://github.com/yub168/myTvbox.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-27 08:08:23.538685
+[master edf74e5] update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+ rewrite config.json (98%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 774f9c90        
+To https://gitee.com/yub168/myTvbox.git
+   8a0db15..edf74e5  master -> master
+To https://github.com/yub168/myTvbox.git
+   aa621cb..edf74e5  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+HTTPSConnectionPool(host='ghproxy.net', port=443): Read timed out. (read timeout=3.0)
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-27 18:08:24.036343
+[master ef9eafb] update
+ 2 files changed, 22 insertions(+), 1 deletion(-)
+ rewrite config.json (94%)
+remote: Powered by [01;33mGITEE.COM [0m[1.1.5]        
+remote: Set trace flag 4c44469d        
+To https://gitee.com/yub168/myTvbox.git
+   edf74e5..ef9eafb  master -> master
+To https://github.com/yub168/myTvbox.git
+   edf74e5..ef9eafb  master -> master
+From https://gitee.com/yub168/myTvbox
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+<string>:1 Unexpected "�" at column 1
+<string>:1 Unexpected "B" at column 1
+设置主配置 ['fatCat', '饭太硬', 'mi', '王小二', '香雅情', 'OK佬']
+设置直播
+lives 配置为 mi
+设置解析
+保存配置
+抓取时间：	 2024-07-28 08:08:26.291724
