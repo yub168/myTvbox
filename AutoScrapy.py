@@ -56,17 +56,7 @@ def isJson(content):
   try:
     
     #print('json解析内容：',content)
-    #data=json5.loads(remove_comments(content))
-    #pattern=r'(".*?)(\r\n)+'
-    #pattern=r'\r\n'
-    #result=re.findall(pattern,content)
-    #print("find result",result)
-    #content=re.sub(pattern, r'', content)
-    #data=commentjson.loads(content)
-    #data = jsonpickle.decode(content)
-    #data=ujson.loads(content)
-    #data=demjson3.decode(content)
-    data = orjson.loads(content)
+    data=json5.loads(content)
     return True
   except Exception as e:  
       print('解析json错误：',e)
@@ -145,8 +135,9 @@ def setLives(customConfig,configList):
   # 提取lives
   print('设置直播')
   #proxy='https://mirror.ghproxy.com/'
-  #url='https://mirror.ghproxy.com/github.com/yub168/myTvbox/raw/master/live.txt'
-  url='http://127.0.0.1:9978/proxy?do=live&url=https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
+  url='https://mirror.ghproxy.com/github.com/yub168/myTvbox/raw/master/live.txt'
+  #url='http://127.0.0.1:9978/proxy?do=live&url=https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
+  #    http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1722589153126/movie.txt
   lives=[]
   if '俊佬线路' in configList and not lives:
     print('lives 配置为 俊佬线路')
@@ -166,9 +157,9 @@ def setLives(customConfig,configList):
           # 获取响应内容
           response.encoding='utf-8'
           data = response.text
-          data=encodeBase64(data)
+          #data=encodeBase64(data)
           # 打开文件进行写入
-          with open('./lives.txt', 'w',encoding='utf-8') as file:
+          with open('./live.txt', 'w',encoding='utf-8') as file:
               file.write(data)
           #print('数据已保存到 live.txt')
           lives[0]['url']=url
@@ -192,31 +183,6 @@ def saveConfig(customConfig):
 # 补充相对地址
 def supplementAddr(url,config):
 
-  # url='https://gitlab.com/duomv/dzhipy/-/raw/main/index.json'
-  # config='''
-  #         {
-  #     "key": "hipy_js_爱看hd",
-  #     "name": "爱看hd(drpy_t3)",
-  #     "type": 3,
-  #     "api": "./drpy_libs/drpy2.min.js",
-  #     "searchable": 1,
-  #     "quickSearch": 1,
-  #     "filterable": 1,
-  #     "order_num": 0,
-  #     "ext": "./drpy_js/爱看hd.js"
-  #   },
-  #   {
-  #     "key": "hipy_js_爱你短剧",
-  #     "name": "爱你短剧(drpy_t3)",
-  #     "type": 3,
-  #     "api": "./drpy_libs/drpy2.min.js",
-  #     "searchable": 1,
-  #     "quickSearch": 1,
-  #     "filterable": 1,
-  #     "order_num": 0,
-  #     "ext": "./drpy_js/爱你短剧.js"
-  #   },
-  #       '''
   host =url[:url.rfind('/')]
   #print('host:',host)
   pattern=r'"\./.*?"'
@@ -233,6 +199,7 @@ def start():
   '俊佬线路':'http://home.jundie.top:81/top98.json',# spider为相对地址 注意lives地址
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv',
+  #'晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/开放接口-影视点播+央卫视',
   'mi':"http://mi.xxooo.shop", # 解析josn错误
   }
   
@@ -244,7 +211,7 @@ def start():
 
 if "__name__==__main__":
   
-  # url='http://ok321.top/tv'
+  # url='https://gitee.com/chenruihe/tvbox/raw/master/开放接口-影视点播+央卫视'
   # config=getConfig(url)
   # print("config:",config)
   # lives=config['lives']
