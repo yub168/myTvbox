@@ -139,6 +139,9 @@ def setLives(customConfig,configList):
   #url='http://127.0.0.1:9978/proxy?do=live&url=https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
   #    http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1722589153126/movie.txt
   lives=[]
+  if '晨瑞' in configList and not lives:
+    print('lives 配置为 晨瑞')
+    lives=configList['晨瑞']['lives']
   if '俊佬线路' in configList and not lives:
     print('lives 配置为 俊佬线路')
     lives=configList['俊佬线路']['lives']
@@ -149,7 +152,7 @@ def setLives(customConfig,configList):
   if lives:
     liveUrl=lives[0].get('url')
     if liveUrl:
-      if '127.0.0.1:9978/proxy' in liveUrl:
+      if '127.0.0.1:9978' in liveUrl:
         liveUrl=liveUrl.split('url=')[1]
       response = requests.get(liveUrl)
       # 检查请求是否成功
@@ -199,7 +202,7 @@ def start():
   '俊佬线路':'http://home.jundie.top:81/top98.json',# spider为相对地址 注意lives地址
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv',
-  #'晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/开放接口-影视点播+央卫视',
+  '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86',
   'mi':"http://mi.xxooo.shop", # 解析josn错误
   }
   
@@ -211,7 +214,7 @@ def start():
 
 if "__name__==__main__":
   
-  # url='https://gitee.com/chenruihe/tvbox/raw/master/开放接口-影视点播+央卫视'
+  # url='https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86'
   # config=getConfig(url)
   # print("config:",config)
   # lives=config['lives']
