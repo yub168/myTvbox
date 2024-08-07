@@ -146,7 +146,7 @@ def setLives(customConfig,configList):
   print('设置直播')
   #proxy='https://mirror.ghproxy.com/'
   #url='https://mirror.ghproxy.com/github.com/yub168/myTvbox/raw/master/live.txt'
-  url='https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
+  url='http://127.0.0.1:9978/proxy?do=live&url=https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
   lives=[]
   if '俊佬线路' in configList and not lives:
     print('lives 配置为 俊佬线路')
@@ -244,21 +244,25 @@ def start():
 
 if "__name__==__main__":
   
-  # url='https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json'
-  # config=testInterface(url)
+  # url='http://ok321.top/tv'
+  # config=getConfig(url)
   # print("config:",config)
+  # lives=config['lives']
   # liveUrl=lives[0].get('url')
   # if liveUrl:
-  #   if '127.0.0.1:9978/proxy' in liveUrl:
+  #   if '127.0.0.1' in liveUrl:
   #     liveUrl=liveUrl.split('url=')[1]
+  #     #liveUrl=liveUrl.split('proxy/')[1]
+  #     print(liveUrl)
   #   response = requests.get(liveUrl)
   #   # 检查请求是否成功
   #   if response.status_code == 200:
   #       # 获取响应内容
   #       response.encoding='utf-8'
   #       data = response.text
-  #       #print(data)
+  #       print(data)
   #       #print(FindResult(data,''))
   #supplementAddr('','')
+  
   start()
 
