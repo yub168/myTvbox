@@ -193,6 +193,7 @@ def supplementAddr(url,config):
 def start():
   list={
   'fatCat':'http://肥猫.com/',
+  '毒盒':'https://毒盒.com/tv',
   '饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '俊佬线路':'http://home.jundie.top:81/top98.json',# spider为相对地址 注意lives地址
@@ -201,7 +202,8 @@ def start():
   '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86',
   'mi':"http://mi.xxooo.shop", # 解析josn错误
   }
-  
+
+
   configList=getConfigs(list)
   customConfig=setConfig(configList)
   setLives(customConfig,configList)
