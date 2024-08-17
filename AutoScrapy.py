@@ -80,11 +80,13 @@ def getConfig(url):
 
 def getConfigs(list):
   configList={}
+  sites=[]
   for key,value in list.items():
     config=getConfig(value)
     if config:
       configList[key]=config
-  return configList
+      sites.append({"name":key,"url":value})
+  return configList,sites
 
 def setConfig(configList):
   # 配置主体内容
@@ -178,7 +180,16 @@ def saveConfig(customConfig):
       print('抓取时间：\t',datetime.datetime.now())
       json.dump(customConfig,file,ensure_ascii=False)
 
-
+# 写入多仓配置
+def saveMulConfig(list):
+  mulConfig={}
+  sites=[{'url':'https://gitee.com/yub168/myTvbox/raw/master/config.json','name':"yub168"}]
+  sites.extend(list)
+  mulConfig['urls']=sites
+  with open("./mulConfig.json", "w",encoding='utf-8') as file:
+      # 使用json.dump将数据写入文件
+      print('抓取时间：\t',datetime.datetime.now())
+      json.dump(mulConfig,file,ensure_ascii=False)
 # 补充相对地址
 def supplementAddr(url,config):
 
@@ -204,11 +215,12 @@ def start():
   }
 
 
-  configList=getConfigs(list)
+  configList,sites=getConfigs(list)
   customConfig=setConfig(configList)
   setLives(customConfig,configList)
   setParise(customConfig,configList)
   saveConfig(customConfig)
+  saveMulConfig(sites)
 
 if "__name__==__main__":
   
