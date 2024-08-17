@@ -128,7 +128,7 @@ def setParise(customConfig,configList):
   #     parses=configList['OK佬']['parses']
   #     customConfig['parses']=parses
     
-
+'''
 def setLives(customConfig,configList):
   # 提取lives
   print('设置直播')
@@ -169,7 +169,30 @@ def setLives(customConfig,configList):
           print('请求失败，状态码:', response.status_code)
     else:
       print('没有live地址！')
-
+'''
+def setLives(customConfig,configList):
+  lives=[]
+  mylive={
+      
+      "name": "yub168",
+      "type": 0,
+      "url": "https://iptv.b2og.com/txt/ycl_iptv.txt",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
+      "logo": "http://diyp2.112114.xyz/logo/{name}.png"
+    }
+  lives.append(mylive)
+  if '晨瑞' in configList :
+    print('lives 配置为 晨瑞')
+    lives.extend(configList['晨瑞']['lives'])
+  if '俊佬线路' in configList :
+    print('lives 配置为 俊佬线路')
+    lives.extend(configList['俊佬线路']['lives'])
+  if 'OK佬' in configList :
+    print('lives 配置为 OK佬')
+    lives.extend(configList['OK佬']['lives'])
+  customConfig["lives"]=lives
 def saveConfig(customConfig):
   
   if customConfig:
