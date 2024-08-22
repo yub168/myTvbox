@@ -176,23 +176,46 @@ def setLives(customConfig,configList):
       
       "name": "yub168",
       "type": 0,
-      "url": "https://iptv.b2og.com/txt/ycl_iptv.txt",
+      "url": "https://github.com/yub168/m3u-tester/raw/master/lives.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
       "logo": "http://diyp2.112114.xyz/logo/{name}.png"
     }
   lives.append(mylive)
-  if '晨瑞' in configList :
-    print('lives 配置为 晨瑞')
-    lives.extend(configList['晨瑞']['lives'])
-  if '俊佬线路' in configList :
-    print('lives 配置为 俊佬线路')
-    lives.extend(configList['俊佬线路']['lives'])
-  if 'OK佬' in configList :
-    print('lives 配置为 OK佬')
-    lives.extend(configList['OK佬']['lives'])
+  liveSource={}
+  for site,config in configList.items():
+    liveItem=config.get('lives',None)
+    if liveItem:
+      lives.extend(liveItem)
+      for item in liveItem:
+        url=item.get('url','')
+        if url:
+          if "127.0.0.1" in url:
+            url=url.split('url=')[1]
+          liveSource.update({site+"_"+item.get('name',''):url})
+
+  # if '晨瑞' in configList :
+  #   print('lives 配置为 晨瑞')
+  #   lives.extend(configList['晨瑞']['lives'])
+  # if '俊佬线路' in configList :
+  #   print('lives 配置为 俊佬线路')
+  #   lives.extend(configList['俊佬线路']['lives'])
+  # if 'OK佬' in configList :
+  #   print('lives 配置为 OK佬')
+  #   lives.extend(configList['OK佬']['lives'])
+
   customConfig["lives"]=lives
+  if liveSource:
+    saveLiveSource(liveSource)
+def saveLiveSource(data):
+  try:
+    with open('liveSource.json','w',encoding='utf-8') as f:
+      json.dump(data, f, ensure_ascii=False)
+  except BaseException as e:
+        print('保存json失败 %s' % e)
+
+
 def saveConfig(customConfig):
   
   if customConfig:
