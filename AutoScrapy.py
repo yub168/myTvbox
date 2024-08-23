@@ -176,7 +176,7 @@ def setLives(customConfig,configList):
       
       "name": "yub168",
       "type": 0,
-      "url": "https://github.com/yub168/m3u-tester/raw/master/lives.txt",
+      "url": "https://mirror.ghproxy.com/https://github.com/yub168/m3u-tester/raw/master/lives.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
