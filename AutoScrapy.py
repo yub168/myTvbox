@@ -12,7 +12,7 @@ from Crypto.Cipher import AES
 
 def encodeBase64(content):
   content='**'+base64.b64encode(content.encode('utf-8')).decode('utf-8')
-  print(content)
+  #print(content)
   return content
 
 def replace_newlines_in_quoted_strings(text, replacement=" "):
@@ -59,12 +59,12 @@ def FindResult(content,key=None):
 
 
 def isJson(content):
-  print('json解析内容：',content)
-  content=replace_newlines_in_quoted_strings(content)
+  #print('json解析内容：',content)
+  #content=replace_newlines_in_quoted_strings(content)
   
   try:
     #print('json解析内容：',content)
-    print_specific_line(content,147)
+    #print_specific_line(content,147)
     data=json5.loads(content)
     return data
   except ValueError as e:  
@@ -186,7 +186,6 @@ def setLives(customConfig,configList):
 def setLives(customConfig,configList):
   lives=[]
   mylive={
-      
       "name": "yub168",
       "type": 0,
       "url": "https://mirror.ghproxy.com/https://github.com/yub168/m3u-tester/raw/master/lives.txt",
@@ -200,20 +199,24 @@ def setLives(customConfig,configList):
   for site,config in configList.items():
     liveItem=config.get('lives',None)
     if liveItem:
-      lives.extend(liveItem)
+      #lives.extend(liveItem)
       for item in liveItem:
         url=item.get('url','')
         if url:
           if "127.0.0.1" in url:
-            url=url.split('url=')[1]
+            path=url.split('url=')
+            if len(path)>1:
+              url=path[1]
+            else:
+              continue
           liveSource.update({site+"_"+item.get('name',''):url})
 
-  # if '晨瑞' in configList :
-  #   print('lives 配置为 晨瑞')
-  #   lives.extend(configList['晨瑞']['lives'])
-  # if '俊佬线路' in configList :
-  #   print('lives 配置为 俊佬线路')
-  #   lives.extend(configList['俊佬线路']['lives'])
+  if '晨瑞' in configList :
+    print('lives 配置为 晨瑞')
+    lives.extend(configList['晨瑞']['lives'])
+  if '俊佬线路' in configList :
+    print('lives 配置为 俊佬线路')
+    lives.extend(configList['俊佬线路']['lives'])
   # if 'OK佬' in configList :
   #   print('lives 配置为 OK佬')
   #   lives.extend(configList['OK佬']['lives'])
@@ -221,6 +224,7 @@ def setLives(customConfig,configList):
   customConfig["lives"]=lives
   if liveSource:
     saveLiveSource(liveSource)
+
 def saveLiveSource(data):
   try:
     with open('liveSource.json','w',encoding='utf-8') as f:
