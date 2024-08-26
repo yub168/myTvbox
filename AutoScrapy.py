@@ -15,7 +15,18 @@ def encodeBase64(content):
   print(content)
   return content
 
+def replace_newlines_in_quoted_strings(text, replacement=" "):
+    # 使用正则表达式移除单行注释
+    #text= re.sub(r'(?<!http:)(?<!https:)//.*|/\*(.|\n)*?\*/', "", text, flags=re.MULTILINE)
+    # 正则表达式匹配双引号内的换行符
+    pattern = r'"[^"]+"'
+    # 使用re.SUB标志进行全局替换
+    #text=re.sub(pattern, lambda m: m.group(0).replace("\n", replacement), text, flags=0)
+    
+    return text
+
 def FindResult(content,key=None):
+  
   if isJson(content):
     return content
   pattern = re.compile(r"[A-Za-z0]{8}\*\*")
@@ -48,13 +59,15 @@ def FindResult(content,key=None):
 
 
 def isJson(content):
-
+  print('json解析内容：',content)
+  content=replace_newlines_in_quoted_strings(content)
+  
   try:
-    
     #print('json解析内容：',content)
+    print_specific_line(content,147)
     data=json5.loads(content)
-    return True
-  except Exception as e:  
+    return data
+  except ValueError as e:  
       print('解析json错误：',e)
       return False
   
@@ -67,10 +80,10 @@ def getConfig(url):
   try:
     r=requests.get(url,headers=headers, timeout=3.0)
     if r.status_code==200:
-      r.encoding='utf-8'
+      #r.encoding='utf-8'
       jsonText=FindResult(r.text,'')
-      #print(jsonText)
       if jsonText:
+        jsonText=replace_newlines_in_quoted_strings(jsonText)
         supplementAddr(url,jsonText)
         config=json5.loads(jsonText)
         return config
@@ -236,6 +249,7 @@ def saveMulConfig(list):
       # 使用json.dump将数据写入文件
       print('抓取时间：\t',datetime.datetime.now())
       json.dump(mulConfig,file,ensure_ascii=False)
+
 # 补充相对地址
 def supplementAddr(url,config):
 
@@ -257,7 +271,7 @@ def start():
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv',
   '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86',
-  '欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh", # 解析josn错误
+  '欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh", 
   }
 
 
@@ -268,9 +282,21 @@ def start():
   saveConfig(customConfig)
   saveMulConfig(sites)
 
+
+def print_specific_line(text, line_number):
+    # 将文本分割为行列表
+    lines = text.split('\n')
+    
+    # 检查请求的行号是否在有效范围内
+    if 1 <= line_number <= len(lines):
+        # 输出指定行的内容
+        print(f"Line {line_number}: {lines[line_number - 1]}")
+    else:
+        print(f"Error: Line number {line_number} is out of range.")
+
 if "__name__==__main__":
   
-  # url='https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86'
+  # url='https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh'
   # config=getConfig(url)
   # print("config:",config)
   # lives=config['lives']
@@ -292,4 +318,3 @@ if "__name__==__main__":
   
   start()
   
-
