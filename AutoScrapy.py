@@ -83,8 +83,9 @@ def getConfig(url):
       r.encoding='utf-8'
       jsonText=FindResult(r.text,'')
       if jsonText:
-        jsonText=replace_newlines_in_quoted_strings(jsonText)
-        supplementAddr(url,jsonText)
+        # 移除 // 注释
+        #jsonText=replace_newlines_in_quoted_strings(jsonText)
+        jsonText=supplementAddr(url,jsonText)
         config=json5.loads(jsonText)
         return config
   except requests.exceptions.RequestException as e:  
@@ -251,18 +252,19 @@ def saveMulConfig(list):
   mulConfig['urls']=sites
   with open("./mulConfig.json", "w",encoding='utf-8') as file:
       # 使用json.dump将数据写入文件
-      print('抓取时间：\t',datetime.datetime.now())
+      #print('抓取时间：\t',datetime.datetime.now())
       json.dump(mulConfig,file,ensure_ascii=False)
 
 # 补充相对地址
 def supplementAddr(url,config):
 
   host =url[:url.rfind('/')]
-  #print('host:',host)
-  pattern=r'"\./.*?"'
-  config=re.sub(pattern,lambda x:"\""+host+x.group(0)[2:],config)
-  #result=re.findall(pattern,config)
-  #print(config)
+  # 解析：
+  # ['"]：匹配单引号或双引号的字符集合。
+  # (.*?)：非贪婪模式匹配任意字符，直到遇到下一个引号。
+  # \1：引用第一个捕获组（即单引号或双引号），确保匹配的是相同类型的引号。
+  pattern = r'(["\'])\.(/.*?)\1'  # 匹配双引号或单引号的内容
+  config=re.sub(pattern,lambda x:"\""+host+x.group(2)+'\"',config)
   return config
 
 def start():
@@ -310,9 +312,9 @@ def print_specific_line(text, line_number):
 
 if "__name__==__main__":
   
-  # url='https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh'
+  # url='https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json'
   # config=getConfig(url)
-  # print("config:",config)
+  # print(config['lives'])
   # lives=config['lives']
   # liveUrl=lives[0].get('url')
   # if liveUrl:
