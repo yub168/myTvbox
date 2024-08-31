@@ -285,7 +285,7 @@ def start():
   "香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
-  '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3-%E5%BD%B1%E8%A7%86%E7%82%B9%E6%92%AD+%E5%A4%AE%E5%8D%AB%E8%A7%86',
+  '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BD%B1%E8%A7%86%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3',
   '欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh" #json 解析错误
   
   }
@@ -312,7 +312,7 @@ def print_specific_line(text, line_number):
 
 if "__name__==__main__":
   
-  # url='https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json'
+  # url='https://tv.nxog.top/m/tv/'
   # config=getConfig(url)
   # print(config['lives'])
   # lives=config['lives']
