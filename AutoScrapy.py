@@ -271,10 +271,10 @@ def start():
   list={
   'fatCat':'http://肥猫.com/',
   '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播直播都还行
-  '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
+  #'南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
-  '拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
-  '天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
+  #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
+  #'天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
   '毒盒':'https://毒盒.com/tv',#json 解析错误
   '茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
   '饭太硬':"http://www.饭太硬.com/tv",
@@ -282,11 +282,11 @@ def start():
   '俊佬线路':'http://home.jundie.top:81/top98.json',#  注意lives地址多
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv',
-  "香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
+  #"香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
   '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BD%B1%E8%A7%86%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3',
-  '欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh" #json 解析错误
+  #'欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh" #json 解析错误
   
   }
 
