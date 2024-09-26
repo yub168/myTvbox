@@ -105,17 +105,9 @@ def getConfigs(list):
 def setConfig(configList):
   # 配置主体内容
   print('设置主配置',list(configList.keys()))
-  
-  if 'fatCat' in configList:
-    customConfig=configList['fatCat']
-  elif '饭太硬' in configList:
-    customConfig=configList['饭太硬']
-  elif 'OK佬' in configList:
-    customConfig=configList['OK佬']
-  elif 'mi' in configList:
-    customConfig=configList['mi']
-  elif '道长' in configList:
-    customConfig=configList['道长']
+  if configList:
+    configs=list(configList.keys())
+    customConfig=configList.get(configs[0])
   if customConfig:
     mofidyPlayType(customConfig)
   return customConfig
@@ -132,58 +124,23 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
 
 def setParise(customConfig,configList):
   print('设置解析')
-  # if customConfig :
-  #   # 提取解析parses
-  #   parses=[]
-  #   if '香雅情' in configList and not parses:
-  #     parses=configList['香雅情']['parses']
-  #     customConfig['parses']=parses
-  #   if 'OK佬' in configList and not parses:
-  #     parses=configList['OK佬']['parses']
-  #     customConfig['parses']=parses
-    
-'''
-def setLives(customConfig,configList):
-  # 提取lives
-  print('设置直播')
-  #proxy='https://mirror.ghproxy.com/'
-  url='https://mirror.ghproxy.com/github.com/yub168/myTvbox/raw/master/live.txt'
-  #url='http://127.0.0.1:9978/proxy?do=live&url=https://gitee.com/yub168/myTvbox/raw/master/lives.txt'
-  #    http://127.0.0.1:9978/proxy?do=live&url=https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1722589153126/movie.txt
-  lives=[]
-  if '晨瑞' in configList and not lives:
-    print('lives 配置为 晨瑞')
-    lives=configList['晨瑞']['lives']
-  if '俊佬线路' in configList and not lives:
-    print('lives 配置为 俊佬线路')
-    lives=configList['俊佬线路']['lives']
-  if 'OK佬' in configList and not lives:
-    print('lives 配置为 OK佬')
-    lives=configList['OK佬']['lives']
-    
-  if lives:
-    liveUrl=lives[0].get('url')
-    if liveUrl:
-      if '127.0.0.1:9978' in liveUrl:
-        liveUrl=liveUrl.split('url=')[1]
-      response = requests.get(liveUrl)
-      # 检查请求是否成功
-      if response.status_code == 200:
-          # 获取响应内容
-          response.encoding='utf-8'
-          data = response.text
-          #data=encodeBase64(data)
-          # 打开文件进行写入
-          with open('./live.txt', 'w',encoding='utf-8') as file:
-              file.write(data)
-          #print('数据已保存到 live.txt')
-          lives[0]['url']=url
-          customConfig['lives']=lives
-      else:
-          print('请求失败，状态码:', response.status_code)
+  parses=[
+    { # 来自摸鱼儿
+      "name": "zhuimi-super",
+      "type": 1,
+      "url": "http://103.117.123.51:6523/zhuimi666.php?url=",
+      "ext": {
+        "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
+      }
+    }
+    ]
+  if customConfig :
+    # 提取解析parses
+    if customConfig.get('parses'):
+      customConfig['parses'].extend(parses)
     else:
-      print('没有live地址！')
-'''
+      customConfig['parses']=parses
+    
 def setLives(customConfig,configList):
   lives=[]
   mylive={
@@ -213,10 +170,10 @@ def setLives(customConfig,configList):
           liveSource.update({site+"_"+item.get('name',''):url})
 
   if '晨瑞' in configList :
-    print('lives 配置为 晨瑞')
+    print('lives 添加 晨瑞')
     lives.extend(configList['晨瑞']['lives'])
   if '俊佬线路' in configList :
-    print('lives 配置为 俊佬线路')
+    print('lives 添加 俊佬线路')
     lives.extend(configList['俊佬线路']['lives'])
   # if 'OK佬' in configList :
   #   print('lives 配置为 OK佬')
@@ -267,11 +224,11 @@ def supplementAddr(url,config):
   config=re.sub(pattern,lambda x:"\""+host+x.group(2)+'\"',config)
   return config
 
-def start():
-  list={
+def getSiteList():
+  sitelist={
   'fatCat':'http://肥猫.com/',
-  #'摸鱼儿':'http://我不是.摸鱼儿.top',# 点播直播都还行
-  #'南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
+  '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
+  '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
   #'天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
@@ -289,9 +246,9 @@ def start():
   #'欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh" #json 解析错误
   
   }
-
-
-  configList,sites=getConfigs(list)
+  return sitelist
+def start():
+  configList,sites=getConfigs(getSiteList())
   customConfig=setConfig(configList)
   setLives(customConfig,configList)
   setParise(customConfig,configList)
@@ -310,27 +267,11 @@ def print_specific_line(text, line_number):
     else:
         print(f"Error: Line number {line_number} is out of range.")
 
-if "__name__==__main__":
-  
-  # url='https://tv.nxog.top/m/tv/'
-  # config=getConfig(url)
-  # print(config['lives'])
-  # lives=config['lives']
-  # liveUrl=lives[0].get('url')
-  # if liveUrl:
-  #   if '127.0.0.1' in liveUrl:
-  #     liveUrl=liveUrl.split('url=')[1]
-  #     #liveUrl=liveUrl.split('proxy/')[1]
-  #     print(liveUrl)
-  #   response = requests.get(liveUrl)
-  #   # 检查请求是否成功
-  #   if response.status_code == 200:
-  #       # 获取响应内容
-  #       response.encoding='utf-8'
-  #       data = response.text
-  #       print(data)
-  #       #print(FindResult(data,''))
-  #supplementAddr('','')
-  
+if __name__=="__main__":
   start()
+  # configList,sites=getConfigs(getSiteList())
+  # sites=configList.keys()
+  # print(sites)
+  # print(list(sites)[0])
+
   
