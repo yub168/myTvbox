@@ -125,6 +125,16 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
 def setParise(customConfig,configList):
   print('设置解析')
   parses=[
+    {
+      "name": "Json聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Web聚合",
+      "type": 3,
+      "url": "Web"
+    },
     { # 来自摸鱼儿
       "name": "zhuimi-super",
       "type": 1,
@@ -132,14 +142,28 @@ def setParise(customConfig,configList):
       "ext": {
         "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
       }
+    },
+    {
+      "name": "qiyi[官源]",
+      "type": 1,
+      "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
+    },
+    {
+      "name": "肥猫最可爱",
+      "type": 1,
+      "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+      "ext": {
+        "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
+      }
     }
     ]
   if customConfig :
+    customConfig['parses']=parses
     # 提取解析parses
-    if customConfig.get('parses'):
-      customConfig['parses'].extend(parses)
-    else:
-      customConfig['parses']=parses
+    # if customConfig.get('parses'):
+    #   customConfig['parses'].extend(parses)
+    # else:
+    #   customConfig['parses']=parses
     
 def setLives(customConfig,configList):
   lives=[]
