@@ -8,22 +8,12 @@ import json5
 import datetime
 import base64
 from Crypto.Cipher import AES
-
+import json_repair
 
 def encodeBase64(content):
   content='**'+base64.b64encode(content.encode('utf-8')).decode('utf-8')
   #print(content)
   return content
-
-def replace_newlines_in_quoted_strings(text, replacement=" "):
-    # 使用正则表达式移除单行注释
-    #text= re.sub(r'(?<!http:)(?<!https:)//.*|/\*(.|\n)*?\*/', "", text, flags=re.MULTILINE)
-    # 正则表达式匹配双引号内的换行符
-    pattern = r'"[^"]+"'
-    # 使用re.SUB标志进行全局替换
-    #text=re.sub(pattern, lambda m: m.group(0).replace("\n", replacement), text, flags=0)
-    
-    return text
 
 def FindResult(content,key=None):
   
@@ -59,13 +49,10 @@ def FindResult(content,key=None):
 
 
 def isJson(content):
-  #print('json解析内容：',content)
-  #content=replace_newlines_in_quoted_strings(content)
   
   try:
-    #print('json解析内容：',content)
-    #print_specific_line(content,147)
-    data=json5.loads(content)
+    data=json_repair.loads(content)
+    #data=json5.loads(content)
     return data
   except ValueError as e:  
       print('解析json错误：',e)
@@ -86,7 +73,8 @@ def getConfig(url):
         # 移除 // 注释
         #jsonText=replace_newlines_in_quoted_strings(jsonText)
         jsonText=supplementAddr(url,jsonText)
-        config=json5.loads(jsonText)
+        #config=json5.loads(jsonText)
+        config=json_repair.loads(jsonText)
         return config
   except requests.exceptions.RequestException as e:  
     print(e)
@@ -138,7 +126,7 @@ def setParise(customConfig,configList):
     { # 来自摸鱼儿
       "name": "zhuimi-super",
       "type": 1,
-      "url": "http://103.117.123.51:6523/zhuimi666.php?url=",
+      "url": "http://moyu.zhuimi.top/zhuimi666.php?url=",
       "ext": {
         "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
       }
@@ -251,12 +239,13 @@ def supplementAddr(url,config):
 def getSiteList():
   sitelist={
   'fatCat':'http://肥猫.com/',
+  '欧歌':"http://tv.nxog.top/m/" ,
   '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
   #'天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
-  '毒盒':'https://毒盒.com/tv',#json 解析错误
+  #'毒盒':'https://毒盒.com/tv',#json 解析错误
   #'茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
   '饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
@@ -267,7 +256,7 @@ def getSiteList():
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
   '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BD%B1%E8%A7%86%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3',
-  #'欧歌':"https://xn--tkh-mf3g9f.v.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=欧歌tkh" #json 解析错误
+  '欧歌':"http://tv.nxog.top/m/" 
   
   }
   return sitelist
@@ -280,19 +269,13 @@ def start():
   saveMulConfig(sites)
 
 
-def print_specific_line(text, line_number):
-    # 将文本分割为行列表
-    lines = text.split('\n')
-    
-    # 检查请求的行号是否在有效范围内
-    if 1 <= line_number <= len(lines):
-        # 输出指定行的内容
-        print(f"Line {line_number}: {lines[line_number - 1]}")
-    else:
-        print(f"Error: Line number {line_number} is out of range.")
+def testSite(url):
+  config=getConfig(url)
+  print(config)
 
 if __name__=="__main__":
-  start()
+  testSite("http://tv.nxog.top/m/")
+  #start()
   # configList,sites=getConfigs(getSiteList())
   # sites=configList.keys()
   # print(sites)
