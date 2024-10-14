@@ -112,41 +112,33 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
 
 def setParise(customConfig,configList):
   print('设置解析')
-  parses=[
-    {
-      "name": "Json聚合",
-      "type": 3,
-      "url": "Demo"
-    },
-    {
-      "name": "Web聚合",
-      "type": 3,
-      "url": "Web"
-    },
-    { # 来自摸鱼儿
-      "name": "zhuimi-super",
-      "type": 1,
-      "url": "http://moyu.zhuimi.top/zhuimi666.php?url=",
-      "ext": {
-        "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
-      }
-    },
-    {
-      "name": "qiyi[官源]",
-      "type": 1,
-      "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
-    },
-    {
-      "name": "肥猫最可爱",
-      "type": 1,
-      "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
-      "ext": {
-        "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
-      }
-    }
-    ]
-  if customConfig :
-    customConfig['parses']=parses
+  # parses=[
+  #   {
+  #     "name": "Json聚合",
+  #     "type": 3,
+  #     "url": "Demo"
+  #   },
+  #   {
+  #     "name": "Web聚合",
+  #     "type": 3,
+  #     "url": "Web"
+  #   },
+  #   {
+  #     "name": "qiyi[官源]",
+  #     "type": 1,
+  #     "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
+  #   },
+  #   {
+  #     "name": "肥猫最可爱",
+  #     "type": 1,
+  #     "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
+  #     "ext": {
+  #       "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
+  #     }
+  #   }
+  #   ]
+  # if customConfig :
+  #   customConfig['parses']=parses
     # 提取解析parses
     # if customConfig.get('parses'):
     #   customConfig['parses'].extend(parses)
@@ -238,9 +230,9 @@ def supplementAddr(url,config):
 
 def getSiteList():
   sitelist={
+  '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
   '欧歌':"http://tv.nxog.top/m/" ,
-  '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
