@@ -49,21 +49,20 @@ def FindResult(content,key=None):
 
 
 def isJson(content):
-  
   try:
-    data=json_repair.loads(content)
-    #data=json5.loads(content)
+    #data=json_repair.loads(content) #json_repair.loads会把 json 变成 list[json]
+    data=json5.loads(content)
     return data
   except ValueError as e:  
       print('解析json错误：',e)
       return False
   
-def getConfig(url):
+def getConfig(key,url):
   headers={
   "User-Agent":"okhttp/3.15",
   "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
   }
- 
+  print(f'======开始抓取：{key}')
   try:
     r=requests.get(url,headers=headers, timeout=3.0)
     if r.status_code==200:
@@ -73,8 +72,7 @@ def getConfig(url):
         # 移除 // 注释
         #jsonText=replace_newlines_in_quoted_strings(jsonText)
         jsonText=supplementAddr(url,jsonText)
-        #config=json5.loads(jsonText)
-        config=json_repair.loads(jsonText)
+        config=json5.loads(jsonText)
         return config
   except requests.exceptions.RequestException as e:  
     print(e)
@@ -84,7 +82,7 @@ def getConfigs(list):
   configList={}
   sites=[]
   for key,value in list.items():
-    config=getConfig(value)
+    config=getConfig(key,value)
     if config:
       configList[key]=config
       sites.append({"name":key,"url":value})
@@ -159,6 +157,7 @@ def setLives(customConfig,configList):
   lives.append(mylive)
   liveSource={}
   for site,config in configList.items():
+    print(f'========site:{site},\n=========config:{config}')
     liveItem=config.get('lives',None)
     if liveItem:
       #lives.extend(liveItem)
@@ -232,23 +231,22 @@ def getSiteList():
   sitelist={
   '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
-  '欧歌':"http://tv.nxog.top/m/" ,
+  #'欧歌':"http://tv.nxog.top/m/" , #解析错误
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
   #'天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
   #'毒盒':'https://毒盒.com/tv',#json 解析错误
   #'茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
-  '饭太硬':"http://www.饭太硬.com/tv",
+  #'饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '俊佬线路':'http://home.jundie.top:81/top98.json',#  注意lives地址多
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
-  'OK佬':'http://ok321.top/tv',
+  #'OK佬':'http://ok321.top/tv', #解析错误
   #"香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
   '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BD%B1%E8%A7%86%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3',
-  '欧歌':"http://tv.nxog.top/m/" 
   
   }
   return sitelist
@@ -263,11 +261,12 @@ def start():
 
 def testSite(url):
   config=getConfig(url)
+  #print(len(config))
   print(config)
 
 if __name__=="__main__":
-  testSite("http://tv.nxog.top/m/")
-  #start()
+  #testSite("http://tv.nxog.top/m/")
+  start()
   # configList,sites=getConfigs(getSiteList())
   # sites=configList.keys()
   # print(sites)
