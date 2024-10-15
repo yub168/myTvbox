@@ -161,16 +161,6 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
 def setParise(customConfig,configList):
   print('设置解析')
   parses=[
-    {
-      "name": "Json聚合",
-      "type": 3,
-      "url": "Demo"
-    },
-    {
-      "name": "Web聚合",
-      "type": 3,
-      "url": "Web"
-    },
     { # 来自 潇洒 
       "name": "LX蓝光",
       "url": "http://llyh.xn--yi7aa.top/api/?key=5b317c16d457b31a3150d87c0a362a9e&url=",
@@ -274,7 +264,7 @@ def setParise(customConfig,configList):
     }
     ]
   if customConfig :
-    customConfig['parses']=parses
+    customConfig['parses'].extend(parses)
     # 提取解析parses
     # if customConfig.get('parses'):
     #   customConfig['parses'].extend(parses)
@@ -367,7 +357,7 @@ def supplementAddr(url,config):
 
 def getSiteList():
   sitelist={
-  '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
+  '摸鱼儿':'http://我不是.摸鱼儿.com',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
   '欧歌':"http://tv.nxog.top/m/" , #解析错误
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
