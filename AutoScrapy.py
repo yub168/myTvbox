@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
-import json
+import json,simplejson
 #import ast
 import re
 import json5
@@ -9,7 +9,6 @@ import datetime
 import base64
 from Crypto.Cipher import AES
 import json_repair
-
 def encodeBase64(content):
   content='**'+base64.b64encode(content.encode('utf-8')).decode('utf-8')
   #print(content)
@@ -17,8 +16,7 @@ def encodeBase64(content):
 
 def FindResult(content,key=None):
   
-  if isJson(content):
-    return content
+  # 解析加密 以8个字母加**的内容
   pattern = re.compile(r"[A-Za-z0]{8}\*\*")
   result = pattern.search(content) 
   if result:
@@ -31,6 +29,8 @@ def FindResult(content,key=None):
         return data
     except Exception as e:
       return None
+    
+  # 解析 以**开头的内容 主要在lives配置加密中
   if content.startswith('**'):
     try:
         #print(result.group())
@@ -41,20 +41,70 @@ def FindResult(content,key=None):
         return data
     except Exception as e:
       return None
+    
+  # 解析 以2423开头的内容
   if content.startswith('2423'):
         return None
+  
+  # 放后面主要防止不是json的为判断为json
+  if isJson(content):
+    #print('========= is json5')
+    return content
+  
   elif key and isJson(content):
     aes = AES.new(key,AES.MODE_ECB)
     return aes.decrypt(content)
 
+def printLine(content,n):
+  lines = content.split('\n')
+  try:
+      line_content = lines[n - 1]
+      print(f"第{n}行的内容是: {line_content}")
+  except IndexError:
+      print(f"行号 {n} 超出字符串的行数范围。")
+
+def replace_newlines_in_quoted_strings(text):
+  # 正则表达式模式：匹配引号中的内容，包括换行符
+  pattern = r'(["\'])([\s\S]*?)\1'
+
+  # 替换函数：将匹配到的内容中的换行符替换为空格
+  def replace_newlines_in_quotes(match):
+      #print('内容：',match.group(0))
+      return re.sub(r'\n', '', match.group(0))
+
+  # 使用 re.sub 进行替换
+  result = re.sub(pattern, replace_newlines_in_quotes, text)
+  return result
+
+def safePariseJson(content):
+  import sys
+  try:
+    #print('json解析内容：',content)
+    data=json5.loads(content)
+    #data=simplejson.loads(content)
+    return data
+  except Exception as e:  
+    error_info = sys.exc_info()
+    print("错误类型：", error_info[0])
+    print("错误信息：", error_info[1])
+    print("错误位置：", error_info[2])
+    #printLine(content,1)
+    content=replace_newlines_in_quoted_strings(content)
+    content = re.sub(r'(?<!http:)(?<!https:)//.*|/\*(.|\n)*?\*/', '', content)
+    data=json_repair.loads(content)
+    #data=json5.loads(content)
+    return data
+
 
 def isJson(content):
   try:
-    #data=json_repair.loads(content) #json_repair.loads会把 json 变成 list[json]
-    data=json5.loads(content)
+    #print('json解析内容：',content)
+    data=json_repair.loads(content) #json_repair.loads会把 json 变成 list[json]
+    #data=json.JSONDecoder(strict=False).decode(content)
+    #data=json5.loads(content)
     return data
   except ValueError as e:  
-      print('解析json错误：',e)
+      print('isJson解析json错误：',e)
       return False
   
 def getConfig(key,url):
@@ -69,10 +119,10 @@ def getConfig(key,url):
       r.encoding='utf-8'
       jsonText=FindResult(r.text,'')
       if jsonText:
-        # 移除 // 注释
-        #jsonText=replace_newlines_in_quoted_strings(jsonText)
         jsonText=supplementAddr(url,jsonText)
-        config=json5.loads(jsonText)
+        #config=json5.loads(jsonText,strict=False)
+        #config=json.JSONDecoder(strict=False).decode(jsonText)
+        config=safePariseJson(jsonText)
         return config
   except requests.exceptions.RequestException as e:  
     print(e)
@@ -110,33 +160,121 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
 
 def setParise(customConfig,configList):
   print('设置解析')
-  # parses=[
-  #   {
-  #     "name": "Json聚合",
-  #     "type": 3,
-  #     "url": "Demo"
-  #   },
-  #   {
-  #     "name": "Web聚合",
-  #     "type": 3,
-  #     "url": "Web"
-  #   },
-  #   {
-  #     "name": "qiyi[官源]",
-  #     "type": 1,
-  #     "url": "http://39.104.230.177:1122/lxjx/myyk.php?url="
-  #   },
-  #   {
-  #     "name": "肥猫最可爱",
-  #     "type": 1,
-  #     "url": "http://xn--ihqu10cn4c.xn--z7x900a.live/jx.php?id=2&url=",
-  #     "ext": {
-  #       "flag": [ "qq","腾讯", "qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","rx","ltnb","bilibili","1905","xigua"]
-  #     }
-  #   }
-  #   ]
-  # if customConfig :
-  #   customConfig['parses']=parses
+  parses=[
+    {
+      "name": "Json聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Web聚合",
+      "type": 3,
+      "url": "Web"
+    },
+    { # 来自 潇洒 
+      "name": "LX蓝光",
+      "url": "http://llyh.xn--yi7aa.top/api/?key=5b317c16d457b31a3150d87c0a362a9e&url=",
+      "flag": [
+        "LXTX"
+      ],
+      "header": {
+        "User-Agent": "Dalvik/2.1.0"
+      },
+      "type": "1"
+    },
+    { # 来自 潇洒 
+      "name": "DJ专线",
+      "url": "http://jx.voooe.cn/api/?key=aa70f97f8c109a3c6937ea27a98da6e0&url=",
+      "flag": [
+        "duanju"
+      ],
+      "header": {
+        "User-Agent": "Dalvik/2.1.0"
+      },
+      "type": "1"
+    },
+    { # 来自 潇洒
+      "name": "虾米",
+      "type": 0,
+      "url": "https://jx.xmflv.com/?url=",
+      "ext": {
+        "header": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57"
+        }
+      }
+    },
+    { # 来自 潇洒
+      "name": "8090",
+      "type": 0,
+      "url": "https://www.8090g.cn/?url="
+    },
+    { # 来自 潇洒
+      "name": "ckplayer",
+      "type": 0,
+      "url": "https://www.ckplayer.vip/jiexi/?url="
+    },
+    {
+      "name": "夜幕",
+      "type": 0,
+      "url": "https://www.yemu.xyz/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ]
+      }
+    },
+    {
+      "name": "冰豆",
+      "url": "https://bd.jx.cn/?url=",
+      "type": 0,
+      "ext": {
+        "flag": [
+          "qiyi",
+          "imgo",
+          "爱奇艺",
+          "奇艺",
+          "qq",
+          "qq 预告及花絮",
+          "腾讯",
+          "youku",
+          "优酷",
+          "pptv",
+          "PPTV",
+          "letv",
+          "乐视",
+          "leshi",
+          "mgtv",
+          "芒果",
+          "sohu",
+          "xigua",
+          "fun",
+          "风行"
+        ]
+      },
+      "header": {
+        "User-Agent": "Mozilla/5.0"
+      }
+    }
+    ]
+  if customConfig :
+    customConfig['parses']=parses
     # 提取解析parses
     # if customConfig.get('parses'):
     #   customConfig['parses'].extend(parses)
@@ -157,7 +295,7 @@ def setLives(customConfig,configList):
   lives.append(mylive)
   liveSource={}
   for site,config in configList.items():
-    print(f'========site:{site},\n=========config:{config}')
+    #print(f'========site:{site},\n=========config:{config}')
     liveItem=config.get('lives',None)
     if liveItem:
       #lives.extend(liveItem)
@@ -231,18 +369,18 @@ def getSiteList():
   sitelist={
   '摸鱼儿':'http://我不是.摸鱼儿.top',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
-  #'欧歌':"http://tv.nxog.top/m/" , #解析错误
+  '欧歌':"http://tv.nxog.top/m/" , #解析错误
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
   #'天微':'https://gitee.com/tvkj/tw/raw/main/svip.json',# 点播还行，直播源超多，但有效的不太多
   #'毒盒':'https://毒盒.com/tv',#json 解析错误
   #'茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
-  #'饭太硬':"http://www.饭太硬.com/tv",
+  '饭太硬':"http://www.饭太硬.com/tv",
   "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '俊佬线路':'http://home.jundie.top:81/top98.json',#  注意lives地址多
   'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
-  #'OK佬':'http://ok321.top/tv', #解析错误
+  'OK佬':'http://ok321.top/tv', #解析错误
   #"香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
@@ -259,13 +397,30 @@ def start():
   saveMulConfig(sites)
 
 
-def testSite(url):
-  config=getConfig(url)
-  #print(len(config))
-  print(config)
+def testSite(site,url):
+  config=getConfig(site,url)
+  print(type(config))
+  #print(config)
+
+def jsonPariseTest():
+  json_string = """
+📢接口软件永远免费
+📢长期维护切勿贩卖
+📢智能AI已过滤广告"
+              """
+  if isJson(json_string):
+    print('True')
+  else:
+    print('False')
+  # 使用json.loads()解析JSON字符串
+  #data = json5.loads(json_string)
+  # json_string=replace_newlines_in_quoted_strings(json_string)
+  # data = simplejson.loads(json_string)
+  # print(data)  # 输出解析后的数据
 
 if __name__=="__main__":
-  #testSite("http://tv.nxog.top/m/")
+  #testSite('',"http://www.饭太硬.com/tv")
+  #jsonPariseTest()
   start()
   # configList,sites=getConfigs(getSiteList())
   # sites=configList.keys()
