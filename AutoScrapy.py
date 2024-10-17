@@ -26,9 +26,9 @@ def FindResult(content,key=None):
         content = content[content.index(result.group()) + 10:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
-        return data
+        return True,data
     except Exception as e:
-      return None
+      return False,e
     
   # 解析 以**开头的内容 主要在lives配置加密中
   if content.startswith('**'):
@@ -38,22 +38,29 @@ def FindResult(content,key=None):
         content = content[2:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
-        return data
+        return True,data
     except Exception as e:
-      return None
+      return False,e
     
   # 解析 以2423开头的内容
   if content.startswith('2423'):
-        return None
+        return False,'2423开头内容尚末解析'
   
   # 放后面主要防止不是json的为判断为json
   if isJson(content):
     #print('========= is json5')
-    return content
+    return True,content
   
   elif key and isJson(content):
-    aes = AES.new(key,AES.MODE_ECB)
-    return aes.decrypt(content)
+    try:
+      aes = AES.new(key,AES.MODE_ECB)
+      data=aes.decrypt(content)
+      return True,data
+    except Exception as e:
+      return False,e
+  
+  else:
+    return False,'无法解析内容'
 
 def printLine(content,n):
   lines = content.split('\n')
@@ -107,35 +114,42 @@ def isJson(content):
       print('isJson解析json错误：',e)
       return False
   
-def getConfig(key,url):
+def getConfig(url):
   headers={
   "User-Agent":"okhttp/3.15",
   "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
   }
-  print(f'======开始抓取：{key}')
   try:
     r=requests.get(url,headers=headers, timeout=3.0)
     if r.status_code==200:
       r.encoding='utf-8'
-      jsonText=FindResult(r.text,'')
-      if jsonText:
+      result,jsonText=FindResult(r.text,'')
+      if result:
         jsonText=supplementAddr(url,jsonText)
         #config=json5.loads(jsonText,strict=False)
         #config=json.JSONDecoder(strict=False).decode(jsonText)
         config=safePariseJson(jsonText)
-        return config
+        return True,config
+      else:
+        return False,jsonText
+    else:
+      return False,'网络错误'
   except requests.exceptions.RequestException as e:  
     print(e)
+    return False,e
   
 
 def getConfigs(list):
   configList={}
   sites=[]
   for key,value in list.items():
-    config=getConfig(key,value)
-    if config:
+    print(f'======开始抓取：{key}')
+    result,config=getConfig(value)
+    if result:
       configList[key]=config
       sites.append({"name":key,"url":value})
+    else:
+      print(f'====== {key} 抓取失败：{config}')
   return configList,sites
 
 def setConfig(configList):
@@ -335,7 +349,7 @@ def saveConfig(customConfig):
 # 写入多仓配置
 def saveMulConfig(list):
   mulConfig={}
-  sites=[{'url':'https://gitee.com/yub168/myTvbox/raw/master/config.json','name':"yub168"}]
+  sites=[{'url':'https://mirror.ghproxy.com/https://github.com/yub168/myTvbox/raw/refs/heads/master/config.json','name':"yub168"}]
   sites.extend(list)
   mulConfig['urls']=sites
   with open("./mulConfig.json", "w",encoding='utf-8') as file:
@@ -374,7 +388,7 @@ def getSiteList():
   #"香雅情":"https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",
   #'道长':"https://bitbucket.org/xduo/libs/raw/master/index.json", #有4K专线很多无效
   'D老魔改':'https://download.kstore.space/download/2883/nzk/nzk0722.json',# 点播不行，直播 央卫视高峰期能放 分组词：央卫
-  '晨瑞':'https://gitee.com/chenruihe/tvbox/raw/master/%E5%BD%B1%E8%A7%86%E5%86%85%E7%BD%AE%E6%8E%A5%E5%8F%A3',
+  '晨瑞':'https://ghproxy.cn:443/https://raw.githubusercontent.com/wagaga001/chenrui/refs/heads/main/ruiying_Built-in%20interfaces',
   
   }
   return sitelist
@@ -387,10 +401,10 @@ def start():
   saveMulConfig(sites)
 
 
-def testSite(site,url):
-  config=getConfig(site,url)
+def testSite(url):
+  config=getConfig(url)
   print(type(config))
-  #print(config)
+  print(config)
 
 def jsonPariseTest():
   json_string = """
@@ -409,7 +423,7 @@ def jsonPariseTest():
   # print(data)  # 输出解析后的数据
 
 if __name__=="__main__":
-  #testSite('',"http://www.饭太硬.com/tv")
+  #testSite('',"https://ghproxy.cn:443/https://raw.githubusercontent.com/wagaga001/chenrui/refs/heads/main/ruiying_Built-in%20interfaces")
   #jsonPariseTest()
   start()
   # configList,sites=getConfigs(getSiteList())
