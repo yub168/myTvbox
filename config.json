@@ -558,9 +558,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "厂长弹幕",
@@ -571,9 +569,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "天天弹幕",
@@ -584,9 +580,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "文才弹幕",
@@ -597,9 +591,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "荐片弹幕",
@@ -611,9 +603,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "立播弹幕",
@@ -627,8 +617,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "danmu": true
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt"
       }
     },
     {
@@ -640,9 +629,7 @@
       "searchable": 1,
       "filterable": 1,
       "changeable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "机器人弹幕",
@@ -653,9 +640,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "小苹果弹幕",
@@ -666,9 +651,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "一起看弹幕",
@@ -679,9 +662,7 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "ext": {
-        "danmu": true
-      }
+      "ext": {}
     },
     {
       "key": "哔嘀弹幕",
@@ -693,8 +674,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "site": "https://www.yjys02.com",
-        "danmu": true
+        "site": "https://www.yjys02.com"
       }
     },
     {
@@ -710,8 +690,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://wogg.xxooo.cf",
-        "danmu": true
+        "site": "https://wogg.xxooo.cf"
       }
     },
     {
@@ -762,8 +741,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "https://tv.yydsys.top",
-        "danmu": true
+        "site": "https://tv.yydsys.top"
       }
     },
     {
@@ -778,8 +756,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "http://labipan.com/",
-        "danmu": true
+        "site": "http://labipan.com/"
       }
     },
     {
@@ -795,8 +772,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://mihdr.top",
-        "danmu": true
+        "site": "https://mihdr.top"
       }
     },
     {
@@ -812,8 +788,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://vip.omii.top",
-        "danmu": true
+        "site": "https://vip.omii.top"
       }
     },
     {
@@ -829,8 +804,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "https://4k.4u4.cn",
-        "danmu": true
+        "site": "https://4k.4u4.cn"
       }
     },
     {
@@ -846,8 +820,7 @@
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
         "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "site": "http://mogg.小胡.top",
-        "danmu": true
+        "site": "http://mogg.小胡.top"
       }
     },
     {
@@ -861,8 +834,7 @@
       "changeable": 1,
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -876,8 +848,7 @@
       "changeable": 1,
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -890,8 +861,7 @@
       "filterable": 0,
       "changeable": 1,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
       }
     },
     {
@@ -904,8 +874,7 @@
       "filterable": 0,
       "changeable": 1,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
       }
     },
     {
@@ -918,8 +887,7 @@
       "filterable": 0,
       "changeable": 1,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
       }
     },
     {
@@ -932,8 +900,7 @@
       "filterable": 0,
       "changeable": 1,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
       }
     },
     {
@@ -947,7 +914,6 @@
       "changeable": 1,
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true,
         "cookie": "satoken=0eedba28-be8a-4f01-81af-2d8d44808ecf"
       }
     },
@@ -962,8 +928,7 @@
       "changeable": 1,
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -977,8 +942,7 @@
       "changeable": 0,
       "ext": {
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "site": "https://www.misou.fun",
-        "danmu": true
+        "site": "https://www.misou.fun"
       }
     },
     {
@@ -991,8 +955,7 @@
       "filterable": 1,
       "changeable": 0,
       "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -1005,8 +968,7 @@
       "filterable": 1,
       "changeable": 0,
       "ext": {
-        "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
-        "danmu": true
+        "token": "http://127.0.0.1:9978/file/TVBox/token.txt"
       }
     },
     {
@@ -1020,8 +982,7 @@
       "filterable": 1,
       "changeable": 1,
       "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -1035,8 +996,7 @@
       "filterable": 1,
       "changeable": 1,
       "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -1049,8 +1009,7 @@
       "filterable": 1,
       "changeable": 1,
       "ext": {
-        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "danmu": true
+        "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt"
       }
     },
     {
@@ -1357,8 +1316,7 @@
       "ext": {
         "token": "http://127.0.0.1:9978/file/TVBox/token.txt",
         "cookie": "http://127.0.0.1:9978/file/TVBox/quark.txt",
-        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt",
-        "danmu": true
+        "uc_cookie": "http://127.0.0.1:9978/file/TVBox/uc.txt"
       }
     }
   ],
@@ -1684,7 +1642,7 @@
     {
       "name": "公众号【晨瑞黑科】直播源",
       "type": 0,
-      "url": "https://www.gitlink.org.cn/attachments/entries/get_file?download_url=https://www.gitlink.org.cn/api/chenrui007/tvbox/raw/.%2A.%2A.%2A.?ref=master",
+      "url": "https://ghproxy.cn/https://raw.githubusercontent.com/wagaga001/chenrui/refs/heads/main/CHENRUI_IPTV.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
       "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",

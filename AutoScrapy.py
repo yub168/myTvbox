@@ -168,6 +168,9 @@ def mofidyPlayType(configs,siteKey='荐片',category='1'):
   
     for item in configs['sites']:
       #print(item)
+      if  item.get('ext') and 'danmu' in item.get('ext'):
+        #print('====has danmu====')
+        del item['ext']['danmu']
       if siteKey in item['name']:
         item['playerType']=category
   
