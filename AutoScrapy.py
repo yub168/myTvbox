@@ -296,7 +296,8 @@ def setLives(customConfig,configList):
       "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/yub168/m3u-tester/master/lives.txt",
       "playerType": 1,
       "ua": "okhttp/3.15",
-      "epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
+      #"epg": "http://diyp2.112114.xyz/?ch={name}&date={date}",
+      "epg": 'http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}',
       "logo": "http://diyp2.112114.xyz/logo/{name}.png"
     }
   lives.append(mylive)
