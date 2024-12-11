@@ -9,3 +9,6 @@ ipv6 https://iptv.b2og.com/txt/ycl_iptv.txt
  * 酷影 影片清晰度高，速度快 摸鱼儿
  * 瓜子 影片清晰度高，速度快 摸鱼儿 肥猫
  * 文采 影片清晰度高，速度快 摸鱼儿
+
+ # 央广网广播电台 api
+ * url: https://apppc.cnr.cn/national post data:{}
