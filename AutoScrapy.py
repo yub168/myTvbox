@@ -23,6 +23,7 @@ def FindResult(content,key=None):
     try:
         #print(result.group())
         #print(content.index(result.group()))
+        print('8个字母开头加密')
         content = content[content.index(result.group()) + 10:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
@@ -35,6 +36,7 @@ def FindResult(content,key=None):
     try:
         #print(result.group())
         #print(content.index(result.group()))
+        print('**开头加密')
         content = content[2:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
@@ -44,11 +46,13 @@ def FindResult(content,key=None):
     
   # 解析 以2423开头的内容
   if content.startswith('2423'):
+        print('2423开头加密')
         return False,'2423开头内容尚末解析'
   
   # 放后面主要防止不是json的为判断为json
   if isJson(content):
     #print('========= is json5')
+    print('无加密')
     return True,content
   
   elif key and isJson(content):
@@ -88,7 +92,6 @@ def safePariseJson(content):
   try:
     #print('json解析内容：',content)
     data=json5.loads(content)
-    #data=simplejson.loads(content)
     return data
   except Exception as e:  
     error_info = sys.exc_info()
@@ -96,18 +99,17 @@ def safePariseJson(content):
     print("错误信息：", error_info[1])
     print("错误位置：", error_info[2])
     #printLine(content,1)
-    content=replace_newlines_in_quoted_strings(content)
-    content = re.sub(r'(?<!http:)(?<!https:)//.*|/\*(.|\n)*?\*/', '', content)
+    partent=replace_newlines_in_quoted_strings(content)
+    content = re.sub(r'(?<!http:)(?<!https:)//.*|/\*(.|\n)*?\*/', '',partent)
     data=json_repair.loads(content)
-    #data=json5.loads(content)
-    return data
+    if isinstance(data, dict):
+      return data
 
 
 def isJson(content):
   try:
-    #print('json解析内容：',content)
-    data=json_repair.loads(content) #json_repair.loads会把 json 变成 list[json]
-    #data=json.JSONDecoder(strict=False).decode(content)
+    data=safePariseJson(content)
+    #print("confing类型:",type(data))
     #data=json5.loads(content)
     return data
   except ValueError as e:  
@@ -303,7 +305,7 @@ def setLives(customConfig,configList):
   lives.append(mylive)
   liveSource={}
   for site,config in configList.items():
-    print(f'========site:{site},\n=========config:{config}')
+    #print(f'========site:{site},\n=========config:{config}')
     liveItem=config.get('lives',None)
     if liveItem:
       #lives.extend(liveItem)
@@ -385,7 +387,7 @@ def getSiteList():
   #'毒盒':'https://毒盒.com/tv',#json 解析错误
   #'茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
   '饭太硬':"http://www.饭太硬.com/tv",
-  #"王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
+  "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '俊佬线路':'http://home.jundie.top:81/top98.json',#  注意lives地址多
   #'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv', #解析错误
@@ -427,7 +429,9 @@ def jsonPariseTest():
   # print(data)  # 输出解析后的数据
 
 if __name__=="__main__":
-  #testSite('',"https://ghproxy.cn:443/https://raw.githubusercontent.com/wagaga001/chenrui/refs/heads/main/ruiying_Built-in%20interfaces")
+  #http://我不是.摸鱼儿.com
+  #http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/
+  #testSite("http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/")
   #jsonPariseTest()
   start()
   # configList,sites=getConfigs(getSiteList())
