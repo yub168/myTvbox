@@ -23,7 +23,7 @@ def FindResult(content,key=None):
     try:
         #print(result.group())
         #print(content.index(result.group()))
-        print('8个字母开头加密')
+        #print('8个字母开头加密')
         content = content[content.index(result.group()) + 10:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
@@ -36,7 +36,7 @@ def FindResult(content,key=None):
     try:
         #print(result.group())
         #print(content.index(result.group()))
-        print('**开头加密')
+        #print('**开头加密')
         content = content[2:]
         data=base64.b64decode(content).decode('utf-8')
         #print(data)
@@ -46,13 +46,13 @@ def FindResult(content,key=None):
     
   # 解析 以2423开头的内容
   if content.startswith('2423'):
-        print('2423开头加密')
+        #print('2423开头加密')
         return False,'2423开头内容尚末解析'
   
   # 放后面主要防止不是json的为判断为json
   if isJson(content):
     #print('========= is json5')
-    print('无加密')
+    #print('无加密')
     return True,content
   
   elif key and isJson(content):
