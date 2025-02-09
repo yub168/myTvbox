@@ -387,7 +387,7 @@ def getSiteList():
   #'毒盒':'https://毒盒.com/tv',#json 解析错误
   #'茶余':'https://www.gitlink.org.cn/api/kvymin/TVRule/raw/config.json?ref=master',# 点播不太多，直播还行
   '饭太硬':"http://www.饭太硬.com/tv",
-  "王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
+  #"王小二":"http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/",
   '俊佬线路':'http://home.jundie.top:81/top98.json',#  注意lives地址多
   #'PG':'https://git.acwing.com/iduoduo/orange/-/raw/main/jsm.json',
   'OK佬':'http://ok321.top/tv', #解析错误
