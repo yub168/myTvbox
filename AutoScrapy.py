@@ -355,7 +355,7 @@ def saveConfig(customConfig):
 # 写入多仓配置
 def saveMulConfig(list):
   mulConfig={}
-  sites=[{'url':'https://mirror.ghproxy.com/https://github.com/yub168/myTvbox/raw/refs/heads/master/config.json','name':"yub168"}]
+  sites=[{'url':'https://raw.githubusercontent.com/yub168/myTvbox/refs/heads/master/config.json','name':"yub168"}]
   sites.extend(list)
   mulConfig['urls']=sites
   with open("./mulConfig.json", "w",encoding='utf-8') as file:
@@ -379,7 +379,7 @@ def getSiteList():
   sitelist={
   '摸鱼儿':'http://我不是.摸鱼儿.com',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
-  # '欧歌':"http://tv.nxog.top/m/" , #解析错误
+  '欧歌':"http://tv.nxog.top/m/" , #解析错误 https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
   '潇洒':'https://github.moeyy.xyz/https://raw.githubusercontent.com/PizazzGY/TVBox/main/api.json',#点播不错，直播放不了
   #'拾光':'https://gitee.com/xmbjmjk/omg/raw/master/omg.json',# 点播还行，直播源超多，但有效的不太多
@@ -410,7 +410,9 @@ def start():
 def testSite(url):
   config=getConfig(url)
   print(type(config))
-  print(config)
+  #print(config)
+  print(config[1]['sites'])
+  return config
 
 def jsonPariseTest():
   json_string = """
@@ -431,7 +433,7 @@ def jsonPariseTest():
 if __name__=="__main__":
   #http://我不是.摸鱼儿.com
   #http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/
-  #testSite("http://tvbox.xn--4kq62z5rby2qupq9ub.xyz/")
+  #testSite("https://tv.nxog.top/m/")
   #jsonPariseTest()
   start()
   # configList,sites=getConfigs(getSiteList())
