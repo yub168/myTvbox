@@ -377,7 +377,7 @@ def supplementAddr(url,config):
 
 def getSiteList():
   sitelist={
-  '摸鱼儿':'http://我不是.摸鱼儿.com',# 点播高清较多，
+  #'摸鱼儿':'http://我不是.摸鱼儿.com',# 点播高清较多，
   'fatCat':'http://肥猫.com/',
   '欧歌':"http://tv.nxog.top/m/" , #解析错误 https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv
   '南风':'https://github.moeyy.xyz/https://raw.githubusercontent.com/yoursmile66/TVBox/main/XC.json',##点播不错，直播慢
